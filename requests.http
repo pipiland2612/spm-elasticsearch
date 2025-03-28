@@ -1,0 +1,84 @@
+### Get indices
+GET localhost:9200/_cat/indices
+
+### Get all spans
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-03-28/_search
+Content-Type: application/json
+
+### Get all services
+POST http://localhost:9200/jaeger-main-jaeger-service-2025-03-28/_search
+Content-Type: application/json
+
+{
+  "size": 100
+}
+
+### Apply index level setting
+PUT http://localhost:9200/_settings
+Content-Type: application/json
+
+{
+  "index.search.slowlog.threshold.query.warn": "0ms",
+  "index.search.slowlog.threshold.query.info": "0ms",
+  "index.search.slowlog.threshold.query.debug": "0ms",
+  "index.search.slowlog.threshold.query.trace": "0ms"
+}
+
+### Get list of services
+POST http://localhost:9200/jaeger-main-jaeger-service-2025-03-28/_search
+Content-Type: application/json
+
+{
+  "size": 0,
+  "track_total_hits": 2147483647,
+  "aggregations": {
+    "distinct_services": {
+      "terms": {
+        "field": "serviceName",
+        "size": 10000,
+        "min_doc_count": 1,
+        "shard_min_doc_count": 0,
+        "show_term_doc_count_error": false,
+        "order": [
+          {
+            "_count": "desc"
+          },
+          {
+            "_key": "asc"
+          }
+        ]
+      }
+    }
+  }
+}
+
+### Get spans for trace id
+POST http://localhost:9200/jaeger-main-jaeger-span-2025-03-28/_search
+Content-Type: application/json
+
+{
+  "size": 10000,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "traceID": {
+              "value": "62e13a0d44b87c195a17d5f54d414e73"
+            }
+          }
+        }
+      ],
+      "boost": 1.0
+    }
+  },
+  "sort": [
+    {
+      "startTime": {
+        "order": "asc"
+      }
+    }
+  ],
+  "track_total_hits": 2147483647,
+  "search_after": [1742924873404035]
+}
