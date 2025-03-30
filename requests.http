@@ -119,12 +119,19 @@ Content-Type: application/json
   "query": {
     "bool": {
       "filter": [
-        {"term": {"process.serviceName": "driver"}},
+        {"term": {"process.serviceName": "frontend"}},
         {
           "range": {
             "startTimeMillis": {
-              "gte": 1743353461028,
-              "lte": 1743357061028 }}}]}},
+              "gte": 1743358979071,
+              "lte": 1743362579071}}}, {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {"term": {"tags.key": "span.kind"}},
+                  {"term": {"tags.value": "server"}}]}}}}]}},
   "aggs": {
     "operations": {
       "terms": {"field": "operationName"},
@@ -145,12 +152,19 @@ Content-Type: application/json
   "query": {
     "bool": {
       "filter": [
-        {"term": {"process.serviceName": "mysql"}},
+        {"term": {"process.serviceName": "frontend"}},
         {
           "range": {
             "startTimeMillis": {
-              "gte": 1743334270591,
-              "lte": 1743337870591 }}}]}},
+              "gte": 1743358979071,
+              "lte": 1743362579071}}}, {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {"term": {"tags.key": "span.kind"}},
+                  {"term": {"tags.value": "server"}}]}}}}]}},
   "aggs": {
     "over_time": {
       "date_histogram": {
@@ -174,18 +188,22 @@ Content-Type: application/json
   "query": {
     "bool": {
       "filter": [
-        { "term": { "process.serviceName": "redis" } },
+        {"term": {"process.serviceName": "frontend"}},
         {
           "range": {
             "startTimeMillis": {
-              "gte": 1743334270591,
-              "lte": 1743337870591}}}]}},
+              "gte": 1743358979071,
+              "lte": 1743362579071}}}, {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {"term": {"tags.key": "span.kind"}},
+                  {"term": {"tags.value": "client"}}]}}}}]}},
   "aggs": {
-      "over_time": {
-        "date_histogram": {
-          "field": "startTimeMillis",
-          "fixed_interval": "1m"
-        },
+    "operations": {
+      "terms": {"field": "operationName"},
       "aggs": {
         "error_spans": {
           "nested": { "path": "tags" },
