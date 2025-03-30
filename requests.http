@@ -1,8 +1,12 @@
 ### Get indices
 GET localhost:9200/_cat/indices
 
+### Get all mapping
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-03-28/_mapping
+Content-Type: application/json
+
 ### Get all spans
-GET http://localhost:9200/jaeger-main-jaeger-span-2025-03-28/_search
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-03-30/_search
 Content-Type: application/json
 
 ### Get all services
@@ -81,4 +85,126 @@ Content-Type: application/json
   ],
   "track_total_hits": 2147483647,
   "search_after": [1742924873404035]
+}
+
+### Test GetLatencies
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-03-30/_search
+Content-Type: application/json
+
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {"term": {"process.serviceName": "redis"}},
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": 1743351287470,
+              "lte": 1743354887470 }}}]}},
+  "aggs": {
+    "operations": {
+      "terms": {"field": "operationName"},
+      "aggs": {
+        "latency": {
+          "percentiles": {"field": "duration", "percents": [95]}}}}}
+}
+
+### Example ES query for callRate with groupByOperation=true over one hour range:
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-03-30/_search
+Content-Type: application/json
+
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {"term": {"process.serviceName": "driver"}},
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": 1743353461028,
+              "lte": 1743357061028 }}}]}},
+  "aggs": {
+    "operations": {
+      "terms": {"field": "operationName"},
+      "aggs": {
+        "total_call_count": {"value_count": {"field": "spanID"}},
+        "call_rate_per_second": {
+          "bucket_script": {
+            "buckets_path": {"count": "total_call_count"},
+            "script": "params.count / 3600.0" }}}}}
+}
+
+### Example ES query for callRate with 1-minute buckets over one hour range:
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-03-30/_search
+Content-Type: application/json
+
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {"term": {"process.serviceName": "mysql"}},
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": 1743334270591,
+              "lte": 1743337870591 }}}]}},
+  "aggs": {
+    "over_time": {
+      "date_histogram": {
+        "field": "startTimeMillis",
+        "fixed_interval": "1m"
+      },
+      "aggs": {
+        "total_call_count": {"value_count": {"field": "spanID"}},
+        "call_rate_per_second": {
+          "bucket_script": {
+            "buckets_path": {"count": "total_call_count"},
+            "script": "params.count / 60.0" }}}}}
+}
+
+### Test Error rate
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-03-30/_search
+Content-Type: application/json
+
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        { "term": { "process.serviceName": "redis" } },
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": 1743334270591,
+              "lte": 1743337870591}}}]}},
+  "aggs": {
+      "over_time": {
+        "date_histogram": {
+          "field": "startTimeMillis",
+          "fixed_interval": "1m"
+        },
+      "aggs": {
+        "error_spans": {
+          "nested": { "path": "tags" },
+          "aggs": {
+            "filter_error_tag": {
+              "filter": {
+                "bool": {
+                  "must": [
+                    { "term": { "tags.key": "error" } },
+                    { "term": { "tags.value": "true" } }]}}}}
+        },
+        "total_spans": {
+          "value_count": { "field": "spanID" }
+        },
+        "error_rate": {
+          "bucket_script": {
+            "buckets_path": {
+              "errors": "error_spans>filter_error_tag._count",
+              "total": "total_spans.value"
+            },
+            "script": "params.total > 0 ? (params.errors / params.total * 100) : 0"}}}}}
 }
