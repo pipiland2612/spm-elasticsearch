@@ -30,23 +30,13 @@ Content-Type: application/json
               "bool": {
                 "must": [
                   {"term": {"tags.key": "span.kind"}},
-                  {"term": {"tags.value": "server"}}
-                ]
-              }
-            }
-          }
-        },
+                  {"term": {"tags.value": "server"}}]}}}},
         {
             "range": {
             "startTimeMillis": {
                     "gte": "now-1h",
                     "lte": "now",
-                    "format": "epoch_millis"
-                }
-            }
-        }
-      ]
-    }
+                    "format": "epoch_millis"}}}]}
   },
   "aggs": {
     "requests_per_15s_bucket": {
@@ -81,12 +71,7 @@ Content-Type: application/json
               }
             },
             "buckets_path": "cumulative_requests",
-            "window": 4
-          }
-        }
-      }
-    }
-  }
+            "window": 4}}}}}
 }
 
 
@@ -108,23 +93,13 @@ Content-Type: application/json
               "bool": {
                 "must": [
                   {"term": {"tags.key": "span.kind"}},
-                  {"term": {"tags.value": "server"}}
-                ]
-              }
-            }
-          }
-        },
+                  {"term": {"tags.value": "server"}}]}}}},
         {
             "range": {
             "startTimeMillis": {
                     "gte": "now-6h-10m",
                     "lte": "now",
-                    "format": "epoch_millis"
-                }
-            }
-        }
-      ]
-    }
+                    "format": "epoch_millis"}}}]}
   },
   "aggs": {
     "requests_per_bucket": {
@@ -159,10 +134,5 @@ Content-Type: application/json
               }
             },
             "buckets_path": "cumulative_requests",
-            "window": 10
-          }
-        }
-      }
-    }
-  }
+            "window": 10}}}}}
 }
