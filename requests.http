@@ -2,15 +2,15 @@
 GET localhost:9200/_cat/indices
 
 ### Get all mapping
-GET http://localhost:9200/jaeger-span-2025-05-19/_mapping
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-27/_mapping
 Content-Type: application/json
 
 ### Get all spans
-GET http://localhost:9200/jaeger-span-2025-05-19/_search
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-26/_search
 Content-Type: application/json
 
 ### Get all services
-POST http://localhost:9200/jaeger-service-2025-05-19/_search
+POST http://localhost:9200/jaeger-main-jaeger-service-2025-05-26/_search
 Content-Type: application/json
 
 {
@@ -117,8 +117,97 @@ Content-Type: application/json
           "percentiles": {"field": "duration", "percents": [95]}}}}}
 }
 
-### Example ES query for callRate with 1-minute buckets over one hour range:
-GET http://localhost:9200/jaeger-span-2025-05-19/_search
+### Test Records Count
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-30/_search
+Content-Type: application/json
+
+{
+  "size": 0,
+  "track_total_hits": true,
+  "query": {
+    "bool": {
+      "filter": [
+        {"term": {"process.serviceName": "driver"}},
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {"term": {"tags.key": "span.kind"}},
+                  {"term": {"tags.value": "server"}}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
+### Test GetCallRate raw data
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-27/_search
+Content-Type: application/json
+
+{
+  "size": 10,
+  "query": {
+    "bool": {
+      "filter": [
+        {"term": {"process.serviceName": "jaeger"}},
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": 1748341704376
+            }}},
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {"term": {"tags.key": "span.kind"}},
+                  {"term": {"tags.value": "server"}}]}}}}]}},
+  "sort": [{ "startTimeMillis": "asc" }]
+}
+
+### Test GetCallRate raw data
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-27/_search
+Content-Type: application/json
+
+{
+  "size": 10,
+  "query": {
+    "bool": {
+      "filter": [
+        { "term": { "process.serviceName": "jaeger" } },
+        { "range": { "startTimeMillis": { "gte": 1748341704376 } } },
+        {
+          "bool": {
+            "should": [
+              {
+                "nested": {
+                  "path": "tags",
+                  "query": {
+                    "bool": {
+                      "must": [
+                        { "term": { "tags.key": "span.kind" } },
+                        { "term": { "tags.value": "server" } }]}}}},
+              {
+                "nested": {
+                  "path": "process.tags",
+                  "query": {
+                    "bool": {
+                      "must": [
+                        { "term": { "process.tags.key": "span.kind" } },
+                        { "term": { "process.tags.value": "server" } }]}}}}],
+            "minimum_should_match": 1}}]}},
+  "sort": [{ "startTimeMillis": "asc" }]
+}
+
+### Test GetCallRate
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-30/_search
 Content-Type: application/json
 
 {
@@ -127,10 +216,8 @@ Content-Type: application/json
     "bool": {
       "filter": [
         {"term": {"process.serviceName": "jaeger"}},
+      
         {
-          "range": {
-            "startTimeMillis": {
-              "gte": 1747675920107}}}, {
           "nested": {
             "path": "tags",
             "query": {
@@ -151,7 +238,8 @@ Content-Type: application/json
             "buckets_path": {"count": "total_call_count"},
             "script": "params.count / 60.0" }}}}}
 }
-### Test Error rate
+
+### Test GetErrorRate
 GET http://localhost:9200/jaeger-span-2025-05-19/_search
 Content-Type: application/json
 
