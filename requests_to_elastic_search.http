@@ -12,69 +12,6 @@ GET /jaeger-main-jaeger-span-2025-05-30/_search
 Host: localhost:9200
 
 
-### Calculate call rate for the last 1 hour (15s steps interval, looking back 1 minute)
-GET /jaeger-main-jaeger-span-2025-05-30/_search
-Host: localhost:9200
-Content-Type: application/json
-
-{
-  "size": 0,
-  "query": {
-    "bool": {
-      "filter": [
-        {"term": {"process.serviceName": "customer"}},
-        {
-          "nested": {
-            "path": "tags",
-            "query": {
-              "bool": {
-                "must": [
-                  {"term": {"tags.key": "span.kind"}},
-                  {"term": {"tags.value": "server"}}]}}}},
-        {
-            "range": {
-            "startTimeMillis": {
-                    "gte": "now-1h",
-                    "lte": "now",
-                    "format": "epoch_millis"}}}]}
-  },
-  "aggs": {
-    "requests_per_15s_bucket": {
-      "date_histogram": {
-        "field": "startTimeMillis",
-        "fixed_interval": "15s",
-        "min_doc_count": 0,
-        "extended_bounds": {
-          "min": "now-1h",
-          "max": "now"
-        }
-      },
-      "aggs": {
-        "span_id_count": {
-          "value_count": {
-            "field": "spanID"
-          }
-        },
-        "cumulative_requests": {
-          "cumulative_sum": {
-            "buckets_path": "span_id_count"
-          }
-        },
-        "rate_per_second": {
-          "moving_fn": {
-            "script": {
-              "source": "if (values == null || values.length < params.window) {  return 0.0; } double windowSizeSeconds = params.window * params.interval_ms / 1000.0; double firstVal = values[0];\ndouble lastVal = values[values.length - 1]; return (lastVal - firstVal) / windowSizeSeconds;",
-              "lang": "painless",
-              "params": {
-                "window": 4,
-                "interval_ms": 15000
-              }
-            },
-            "buckets_path": "cumulative_requests",
-            "window": 4}}}}}
-}
-
-
 ### Calculate call rate for the last 1 hour (1m step interval, looking back 10m, for last 1 hour)
 GET /jaeger-main-jaeger-span-2025-05-30/_search
 Host: localhost:9200
