@@ -65,7 +65,3 @@ services:
 
 networks:
   backend:
-
-volumes:
-  esdata:
-    driver: local

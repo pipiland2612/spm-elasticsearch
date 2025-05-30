@@ -22,7 +22,7 @@ Content-Type: application/json
   "query": {
     "bool": {
       "filter": [
-        {"term": {"process.serviceName": "customer"}},
+        {"term": {"process.serviceName": "jaeger"}},
         {
           "nested": {
             "path": "tags",
@@ -58,7 +58,7 @@ Content-Type: application/json
         "rate_per_second": {
           "moving_fn": {
             "script": {
-              "source": "if (values == null || values.length < params.window) {  return 0.0; } double windowSizeSeconds = params.window * params.interval_ms / 1000.0; double firstVal = values[0];\ndouble lastVal = values[values.length - 1]; return (lastVal - firstVal) / windowSizeSeconds;",
+              "source": "if (values == null || values.length < 2) {  return 0.0; } double windowSizeSeconds = values.length * params.interval_ms / 1000.0; double firstVal = values[0];\ndouble lastVal = values[values.length - 1]; return (lastVal - firstVal) / windowSizeSeconds;",
               "lang": "painless",
               "params": {
                 "window": 10,
@@ -67,4 +67,276 @@ Content-Type: application/json
             },
             "buckets_path": "cumulative_requests",
             "window": 10}}}}}
+}
+
+
+### Calculate number of request grouped by operation
+GET /jaeger-main-jaeger-span-2025-05-30/_search
+Host: localhost:9200
+Content-Type: application/json
+
+{
+  "size": 1,
+  "query": {
+    "bool": {
+      "filter": [
+        {"term": {"process.serviceName": "redis"}},
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {"term": {"tags.key": "span.kind"}},
+                  {"term": {"tags.value": "server"}}
+                ]
+              }
+            }
+          }
+        },
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": "now-6h-10m",
+              "lte": "now",
+              "format": "epoch_millis"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "operations": {
+      "terms": {
+        "field": "operationName",
+        "size": 10
+      },
+      "aggs": {
+        "requests_per_bucket": {
+          "date_histogram": {
+            "field": "startTimeMillis",
+            "fixed_interval": "60s",
+            "min_doc_count": 0,
+            "extended_bounds": {
+              "min": "now-6h-10m",
+              "max": "now"
+            }
+          },
+          "aggs": {
+            "cumulative_requests": {
+              "cumulative_sum": {
+                "buckets_path": "_count"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+### Calculate error rate for the last 1 hour (1m step interval, looking back 10m)
+GET /jaeger-main-jaeger-span-2025-05-30/_search
+Host: localhost:9200
+Content-Type: application/json
+
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {"term": {"process.serviceName": "driver"}},
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {"term": {"tags.key": "span.kind"}},
+                  {"term": {"tags.value": "server"}}]}}}},
+        {
+            "range": {
+            "startTimeMillis": {
+                    "gte": "now-6h-10m",
+                    "lte": "now",
+                    "format": "epoch_millis"}}}]}
+  },
+  "aggs": {
+    "requests_per_bucket": {
+      "date_histogram": {
+        "field": "startTimeMillis",
+        "fixed_interval": "60s",
+        "min_doc_count": 0,
+        "extended_bounds": {
+          "min": "now-6h-10m",
+          "max": "now"
+        }
+      },
+      "aggs": {
+        "error_count": {                 // New aggregation to count errors
+          "filter": {
+            "nested": {
+              "path": "tags",
+              "query": {
+                "bool": {
+                  "must": [
+                    {"term": {"tags.key": "error"}},
+                    {"term": {"tags.value": "true"}}
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "cumulative_requests": {
+          "cumulative_sum": {
+            "buckets_path": "_count"
+          }
+        },
+        "cumulative_errors": {
+          "cumulative_sum": {
+            "buckets_path": "error_count._count"
+          }
+        }
+      }
+    }
+  }
+}
+
+
+### Calculate percentile
+GET /jaeger-main-jaeger-span-2025-05-30/_search
+Host: localhost:9200
+Content-Type: application/json
+
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "term": {
+            "process.serviceName": "redis"
+          }
+        },
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {
+                    "term": {
+                      "tags.key": "span.kind"
+                    }
+                  },
+                  {
+                    "term": {
+                      "tags.value": "server"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": "now-20m",
+              "lte": "now",
+              "format": "epoch_millis"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "minute_buckets": {
+      "date_histogram": {
+        "field": "startTimeMillis",
+        "fixed_interval": "1m",
+        "min_doc_count": 0,
+        "extended_bounds": {
+          "min": "now-20m",
+          "max": "now"
+        }
+      },
+      "aggs": {
+        "percentiles_of_bucket": {
+          "percentiles": {
+            "field": "duration",
+            "percents": [
+              50, 95
+            ]
+          }
+        },
+        "percentiles_of_bucket_of_10m_window": {
+          "moving_percentiles": {
+            "buckets_path": "percentiles_of_bucket",
+            "window": 10
+          }
+        }
+      }
+    }
+  }
+}
+
+
+### Calculate percentile
+GET /jaeger-main-jaeger-span-2025-05-30/_search
+Host: localhost:9200
+Content-Type: application/json
+
+{
+  "size": 1,
+  "_source": [
+    "spanID",
+    "operationName",
+    "duration",
+    "startTimeMillis"
+  ],
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "term": {
+            "process.serviceName": "redis"
+          }
+        },
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {
+                    "term": {
+                      "tags.key": "span.kind"
+                    }
+                  },
+                  {
+                    "term": {
+                      "tags.value": "server"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": "now-20m",
+              "lte": "now",
+              "format": "epoch_millis"
+            }
+          }
+        }
+      ]
+    }
+  }
 }
