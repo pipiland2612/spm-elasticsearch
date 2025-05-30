@@ -113,14 +113,9 @@ Content-Type: application/json
         }
       },
       "aggs": {
-        "span_id_count": {
-          "value_count": {
-            "field": "spanID"
-          }
-        },
         "cumulative_requests": {
           "cumulative_sum": {
-            "buckets_path": "span_id_count"
+            "buckets_path": "_count"
           }
         },
         "rate_per_second": {
