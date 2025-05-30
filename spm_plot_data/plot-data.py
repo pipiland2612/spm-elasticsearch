@@ -39,12 +39,18 @@ def extract_call_rate_per_second_from_file(filepath: str) -> dict[int, float]:
     buckets = data.get("aggregations", {}).get("requests_per_bucket", {}).get("buckets", [])
     result = {}
 
+    empty_value= 0.0  # Default value for empty buckets
     for bucket in buckets:
         call_rate = bucket.get("rate_per_second", {}).get("value")
         if call_rate is not None:
             key = bucket.get("key")  # the timestamp key, e.g., 1747678380000
             if key is not None:
                 result[key] = call_rate
+        else:
+            empty_value+= 1.0  # Increment empty value for each empty bucket        
+    
+    print(f"Empty buckets: {empty_value}")
+    
     return result
 
 

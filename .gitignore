@@ -2,3 +2,6 @@
 
 .idea/
 .venv/
+
+spm_plot_data/es_data.json
+spm_plot_data/spm_data.json
