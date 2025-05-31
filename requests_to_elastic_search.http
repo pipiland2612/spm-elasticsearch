@@ -99,12 +99,7 @@ Content-Type: application/json
             "startTimeMillis": {
               "gte": "now-6h-10m",
               "lte": "now",
-              "format": "epoch_millis"
-            }
-          }
-        }
-      ]
-    }
+              "format": "epoch_millis"}}}]}
   },
   "aggs": {
     "operations": {
@@ -126,14 +121,7 @@ Content-Type: application/json
           "aggs": {
             "cumulative_requests": {
               "cumulative_sum": {
-                "buckets_path": "_count"
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+                "buckets_path": "_count" }}}}}}}
 }
 
 ### Calculate error rate for the last 1 hour (1m step interval, looking back 10m)
@@ -174,7 +162,7 @@ Content-Type: application/json
         }
       },
       "aggs": {
-        "error_count": {                 // New aggregation to count errors
+        "error_count": {
           "filter": {
             "nested": {
               "path": "tags",

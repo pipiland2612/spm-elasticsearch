@@ -6,7 +6,7 @@ GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-27/_mapping
 Content-Type: application/json
 
 ### Get all spans
-GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-26/_search
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-30/_search
 Content-Type: application/json
 
 ### Get all services
@@ -88,7 +88,7 @@ Content-Type: application/json
 }
 
 ### Test GetLatencies
-GET http://localhost:9200/jaeger-span-2025-05-19/_search
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-30/_search
 Content-Type: application/json
 
 {
@@ -96,25 +96,84 @@ Content-Type: application/json
   "query": {
     "bool": {
       "filter": [
-        {"term": {"process.serviceName": "redis"}},
+        { "term": {"process.serviceName": "jaeger"}},
         {
-          "range": {
-            "startTimeMillis": {
-              "gte": 1743358979071,
-              "lte": 1743362579071}}}, {
           "nested": {
             "path": "tags",
             "query": {
               "bool": {
                 "must": [
-                  {"term": {"tags.key": "span.kind"}},
-                  {"term": {"tags.value": "client"}}]}}}}]}},
+                  { "term": { "tags.key": "span.kind" } },
+                  { "term": { "tags.value": "server" } }]}}}},
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": "now-10m",
+              "lte": "now",
+              "format": "epoch_millis"}}}]}
+  },
   "aggs": {
-    "operations": {
-      "terms": {"field": "operationName"},
+    "p95_latency": {
+      "percentiles": {
+        "field": "duration",
+        "percents": [95]}}}
+}
+
+### Calculate percentile
+GET /jaeger-main-jaeger-span-2025-05-30/_search
+Host: localhost:9200
+Content-Type: application/json
+
+{
+  "size": 10,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "term": {
+            "process.serviceName": "redis"
+          }
+        },
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  { "term": { "tags.key": "span.kind" } },
+                  { "term": {"tags.value": "server" }}]}}}
+        },
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": "now-20m",
+              "lte": "now",
+              "format": "epoch_millis" }}}]}
+  },
+  "aggs": {
+    "minute_buckets": {
+      "date_histogram": {
+        "field": "startTimeMillis",
+        "fixed_interval": "1m",
+        "min_doc_count": 0,
+        "extended_bounds": {
+          "min": "now-20m",
+          "max": "now"
+        }
+      },
       "aggs": {
-        "latency": {
-          "percentiles": {"field": "duration", "percents": [95]}}}}}
+        "percentiles_of_bucket": {
+          "percentiles": {
+            "field": "duration",
+            "percents": [
+              50, 95
+            ]
+          }
+        },
+        "percentiles_of_bucket_of_10m_window": {
+          "moving_percentiles": {
+            "buckets_path": "percentiles_of_bucket",
+            "window": 10 }}}}}
 }
 
 ### Test Records Count
