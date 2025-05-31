@@ -1,6 +1,6 @@
 #!/bin/bash
 
-service=${1:-jaeger}  # Default to 'redis' if no argument is provided
+service=${1:-redis}  # Default to 'redis' if no argument is provided
 current_timestamp=$(($(date +%s) * 1000))
 
 curl "http://localhost:16686/api/metrics/calls?service=${service}&endTs=${current_timestamp}&lookback=21600000&quantile=0.95&ratePer=600000&spanKind=server&step=60000" \
@@ -32,24 +32,13 @@ curl --request GET \
               "bool": {
                 "must": [
                   { "term": { "tags.key": "span.kind" } },
-                  { "term": { "tags.value": "server" } }
-                ]
-              }
-            }
-          }
-        },
+                  { "term": { "tags.value": "server" } }]}}}},
         {
           "range": {
             "startTimeMillis": {
               "gte": "now-6h-10m",
               "lte": "now",
-              "format": "epoch_millis"
-            }
-          }
-        }
-      ]
-    }
-  },
+              "format": "epoch_millis"}}}]}},
   "aggs": {
     "requests_per_bucket": {
       "date_histogram": {
@@ -76,12 +65,7 @@ curl --request GET \
               }
             },
             "buckets_path": "cumulative_requests",
-            "window": 10
-          }
-        }
-      }
-    }
-  }
+            "window": 10}}}}}
 }
 EOF
 
