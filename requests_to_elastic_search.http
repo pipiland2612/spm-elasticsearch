@@ -194,7 +194,7 @@ Content-Type: application/json
 
 
 ### Calculate percentile
-GET /jaeger-main-jaeger-span-2025-05-30/_search
+GET /jaeger-main-jaeger-span-2025-06-06/_search
 Host: localhost:9200
 Content-Type: application/json
 
@@ -205,7 +205,7 @@ Content-Type: application/json
       "filter": [
         {
           "term": {
-            "process.serviceName": "redis"
+            "process.serviceName": "frontend"
           }
         },
         {

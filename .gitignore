@@ -2,6 +2,8 @@
 
 .idea/
 .venv/
+output.csv
 
 spm_plot_data/es_data.json
 spm_plot_data/spm_data.json
+spm_plot_data/percentiles_spm_data.json

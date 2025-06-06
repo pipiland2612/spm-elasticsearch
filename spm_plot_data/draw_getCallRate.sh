@@ -14,7 +14,7 @@ curl "http://localhost:16686/api/metrics/calls?service=${service}&endTs=${curren
 
 
 curl --request GET \
-  --url http://localhost:9200/jaeger-main-jaeger-span-2025-05-30/_search \
+  --url http://localhost:9200/jaeger-main-jaeger-span-2025-06-06/_search \
   --header 'content-type: application/json' \
   --header 'host: localhost:9200' \
   --header 'user-agent: vscode-restclient' \
@@ -69,4 +69,4 @@ curl --request GET \
 }
 EOF
 
-python plot-data.py
+python3 plot-getCallRate-data.py
