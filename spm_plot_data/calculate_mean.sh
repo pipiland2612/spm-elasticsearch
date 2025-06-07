@@ -66,5 +66,68 @@ curl --request GET \
 
 EOF
 
+curl --request GET \
+  --url http://localhost:9200/jaeger-main-jaeger-span-2025-06-07/_search \
+  --header 'content-type: application/json' \
+  --header 'host: localhost:9200' \
+  --header 'user-agent: vscode-restclient' \
+  --data @- <<EOF | jq . > ./json/mean_getLatencies.json
 
-python3 ./python/getCallRate_mean_calculator.py
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {"term": {"process.serviceName": "${service}"}},
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {"term": {"tags.key": "span.kind"}},
+                  {"term": {"tags.value": "server" }}]}}}
+        },
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": "now-6h",
+              "lte": "now",
+              "format": "epoch_millis" }}}]}
+  },
+  "aggs": {
+    "operations": {
+      "terms": {
+        "field": "operationName",
+        "size": 10
+      },
+      "aggs": {
+        "minute_buckets": {
+          "date_histogram": {
+            "field": "startTimeMillis",
+            "fixed_interval": "1m",
+            "min_doc_count": 0,
+            "extended_bounds": {
+              "min": "now-20m",
+              "max": "now"
+            }
+          },
+          "aggs": {
+            "percentiles_of_bucket": {
+              "percentiles": {
+                "field": "duration",
+                "percents": [
+                  50, 95
+                ]
+              }
+            },
+            "percentiles_of_bucket_of_10m_window": {
+              "moving_percentiles": {
+                "buckets_path": "percentiles_of_bucket",
+                "window": 10 }}}}}}}
+}
+
+
+EOF
+
+python3 ./python/mean_calculator.py
