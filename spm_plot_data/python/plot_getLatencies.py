@@ -1,5 +1,5 @@
-import matplotlib.pyplot as plt
 import json
+import helper
 from typing import List, Dict
 from datetime import datetime, timezone
 
@@ -58,33 +58,7 @@ def extract_percentiles(json_path, percentile):
 
     return result
 
-
-def plot_two_maps(map1: dict, map2: dict, label1="SPM API", label2="ES query"):
-    # Sort items by keys for both maps
-    sorted_items1 = sorted(map1.items())
-    sorted_items2 = sorted(map2.items())
-
-    # Convert keys (assumed to be timestamp in ms) to datetime objects for x-axis
-    x1 = [datetime.fromtimestamp(k / 1000) for k, v in sorted_items1]
-    y1 = [v for k, v in sorted_items1]
-
-    x2 = [datetime.fromtimestamp(k / 1000) for k, v in sorted_items2]
-    y2 = [v for k, v in sorted_items2]
-
-    plt.figure(figsize=(12, 6))
-    plt.plot(x1, y1, marker='o', label=label1)
-    plt.plot(x2, y2, marker='x', label=label2)
-
-    plt.xlabel('Time')
-    plt.ylabel('Value')
-    plt.title('GetLatencies 95th percentile')
-    plt.legend()
-    plt.grid(True)
-    plt.xticks(rotation=45)
-    plt.tight_layout()
-    plt.show()
-
 # Example usage:
-arr1 = extract_gauge_values_from_file("./json/spm_data.json")
-arr2 = extract_percentiles("./json/percentiles_spm_data.json", 0.95)
-plot_two_maps(arr1, arr2)
+arr1 = extract_gauge_values_from_file("./json/spm_getLatencies.json")
+arr2 = extract_percentiles("./json/es_getLatencies.json", 0.95)
+helper.plot_two_maps(arr1, arr2)

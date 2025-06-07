@@ -1,5 +1,5 @@
-import matplotlib.pyplot as plt
 import json
+import helper
 from typing import List, Dict
 from datetime import datetime, timezone
 
@@ -54,35 +54,9 @@ def extract_call_rate_per_second_from_file(filepath: str) -> dict[int, float]:
     
     return result
 
-
-def plot_two_maps(map1: dict, map2: dict, label1="SPM API", label2="ES query"):
-    # Sort items by keys for both maps
-    sorted_items1 = sorted(map1.items())
-    sorted_items2 = sorted(map2.items())
-
-    # Convert keys (assumed to be timestamp in ms) to datetime objects for x-axis
-    x1 = [datetime.fromtimestamp(k / 1000) for k, v in sorted_items1]
-    y1 = [v for k, v in sorted_items1]
-
-    x2 = [datetime.fromtimestamp(k / 1000) for k, v in sorted_items2]
-    y2 = [v for k, v in sorted_items2]
-
-    plt.figure(figsize=(12, 6))
-    plt.plot(x1, y1, marker='o', label=label1)
-    plt.plot(x2, y2, marker='x', label=label2)
-
-    plt.xlabel('Time')
-    plt.ylabel('Value')
-    plt.title('GetCallRate (req/s)')
-    plt.legend()
-    plt.grid(True)
-    plt.xticks(rotation=45)
-    plt.tight_layout()
-    plt.show()
-
 # Example usage:
-arr1 = extract_gauge_values_from_file("./json/spm_data.json")
+arr1 = extract_gauge_values_from_file("./json/spm_getCallRate.json")
 print(len(arr1))
-arr2 = extract_call_rate_per_second_from_file("./json/es_data.json")
+arr2 = extract_call_rate_per_second_from_file("./json/es_getCallRate.json")
 print(len(arr2))
-plot_two_maps(arr1, arr2)
+helper.plot_two_maps(arr1, arr2)

@@ -1,0 +1,3565 @@
+{
+  "took": 55,
+  "timed_out": false,
+  "_shards": {
+    "total": 2,
+    "successful": 2,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "requests_per_bucket": {
+      "buckets": [
+        {
+          "key_as_string": "1749279420000",
+          "key": 1749279420000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749279480000",
+          "key": 1749279480000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749279540000",
+          "key": 1749279540000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749279600000",
+          "key": 1749279600000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749279660000",
+          "key": 1749279660000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749279720000",
+          "key": 1749279720000,
+          "doc_count": 3,
+          "cumulative_requests": {
+            "value": 3.0
+          },
+          "rate_per_second": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749279780000",
+          "key": 1749279780000,
+          "doc_count": 549,
+          "cumulative_requests": {
+            "value": 552.0
+          },
+          "rate_per_second": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749279840000",
+          "key": 1749279840000,
+          "doc_count": 559,
+          "cumulative_requests": {
+            "value": 1111.0
+          },
+          "rate_per_second": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749279900000",
+          "key": 1749279900000,
+          "doc_count": 550,
+          "cumulative_requests": {
+            "value": 1661.0
+          },
+          "rate_per_second": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749279960000",
+          "key": 1749279960000,
+          "doc_count": 555,
+          "cumulative_requests": {
+            "value": 2216.0
+          },
+          "rate_per_second": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749280020000",
+          "key": 1749280020000,
+          "doc_count": 554,
+          "cumulative_requests": {
+            "value": 2770.0
+          },
+          "rate_per_second": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749280080000",
+          "key": 1749280080000,
+          "doc_count": 555,
+          "cumulative_requests": {
+            "value": 3325.0
+          },
+          "rate_per_second": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749280140000",
+          "key": 1749280140000,
+          "doc_count": 558,
+          "cumulative_requests": {
+            "value": 3883.0
+          },
+          "rate_per_second": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749280200000",
+          "key": 1749280200000,
+          "doc_count": 558,
+          "cumulative_requests": {
+            "value": 4441.0
+          },
+          "rate_per_second": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749280260000",
+          "key": 1749280260000,
+          "doc_count": 550,
+          "cumulative_requests": {
+            "value": 4991.0
+          },
+          "rate_per_second": {
+            "value": 0.0
+          }
+        },
+        {
+          "key_as_string": "1749280320000",
+          "key": 1749280320000,
+          "doc_count": 557,
+          "cumulative_requests": {
+            "value": 5548.0
+          },
+          "rate_per_second": {
+            "value": 8.313333333333333
+          }
+        },
+        {
+          "key_as_string": "1749280380000",
+          "key": 1749280380000,
+          "doc_count": 550,
+          "cumulative_requests": {
+            "value": 6098.0
+          },
+          "rate_per_second": {
+            "value": 8.326666666666666
+          }
+        },
+        {
+          "key_as_string": "1749280440000",
+          "key": 1749280440000,
+          "doc_count": 555,
+          "cumulative_requests": {
+            "value": 6653.0
+          },
+          "rate_per_second": {
+            "value": 8.311666666666667
+          }
+        },
+        {
+          "key_as_string": "1749280500000",
+          "key": 1749280500000,
+          "doc_count": 549,
+          "cumulative_requests": {
+            "value": 7202.0
+          },
+          "rate_per_second": {
+            "value": 8.32
+          }
+        },
+        {
+          "key_as_string": "1749280560000",
+          "key": 1749280560000,
+          "doc_count": 552,
+          "cumulative_requests": {
+            "value": 7754.0
+          },
+          "rate_per_second": {
+            "value": 8.31
+          }
+        },
+        {
+          "key_as_string": "1749280620000",
+          "key": 1749280620000,
+          "doc_count": 546,
+          "cumulative_requests": {
+            "value": 8300.0
+          },
+          "rate_per_second": {
+            "value": 8.306666666666667
+          }
+        },
+        {
+          "key_as_string": "1749280680000",
+          "key": 1749280680000,
+          "doc_count": 546,
+          "cumulative_requests": {
+            "value": 8846.0
+          },
+          "rate_per_second": {
+            "value": 8.291666666666666
+          }
+        },
+        {
+          "key_as_string": "1749280740000",
+          "key": 1749280740000,
+          "doc_count": 558,
+          "cumulative_requests": {
+            "value": 9404.0
+          },
+          "rate_per_second": {
+            "value": 8.271666666666667
+          }
+        },
+        {
+          "key_as_string": "1749280800000",
+          "key": 1749280800000,
+          "doc_count": 556,
+          "cumulative_requests": {
+            "value": 9960.0
+          },
+          "rate_per_second": {
+            "value": 8.271666666666667
+          }
+        },
+        {
+          "key_as_string": "1749280860000",
+          "key": 1749280860000,
+          "doc_count": 557,
+          "cumulative_requests": {
+            "value": 10517.0
+          },
+          "rate_per_second": {
+            "value": 8.281666666666666
+          }
+        },
+        {
+          "key_as_string": "1749280920000",
+          "key": 1749280920000,
+          "doc_count": 549,
+          "cumulative_requests": {
+            "value": 11066.0
+          },
+          "rate_per_second": {
+            "value": 8.281666666666666
+          }
+        },
+        {
+          "key_as_string": "1749280980000",
+          "key": 1749280980000,
+          "doc_count": 552,
+          "cumulative_requests": {
+            "value": 11618.0
+          },
+          "rate_per_second": {
+            "value": 8.28
+          }
+        },
+        {
+          "key_as_string": "1749281040000",
+          "key": 1749281040000,
+          "doc_count": 557,
+          "cumulative_requests": {
+            "value": 12175.0
+          },
+          "rate_per_second": {
+            "value": 8.275
+          }
+        },
+        {
+          "key_as_string": "1749281100000",
+          "key": 1749281100000,
+          "doc_count": 560,
+          "cumulative_requests": {
+            "value": 12735.0
+          },
+          "rate_per_second": {
+            "value": 8.288333333333334
+          }
+        },
+        {
+          "key_as_string": "1749281160000",
+          "key": 1749281160000,
+          "doc_count": 552,
+          "cumulative_requests": {
+            "value": 13287.0
+          },
+          "rate_per_second": {
+            "value": 8.301666666666666
+          }
+        },
+        {
+          "key_as_string": "1749281220000",
+          "key": 1749281220000,
+          "doc_count": 556,
+          "cumulative_requests": {
+            "value": 13843.0
+          },
+          "rate_per_second": {
+            "value": 8.311666666666667
+          }
+        },
+        {
+          "key_as_string": "1749281280000",
+          "key": 1749281280000,
+          "doc_count": 552,
+          "cumulative_requests": {
+            "value": 14395.0
+          },
+          "rate_per_second": {
+            "value": 8.328333333333333
+          }
+        },
+        {
+          "key_as_string": "1749281340000",
+          "key": 1749281340000,
+          "doc_count": 559,
+          "cumulative_requests": {
+            "value": 14954.0
+          },
+          "rate_per_second": {
+            "value": 8.318333333333333
+          }
+        },
+        {
+          "key_as_string": "1749281400000",
+          "key": 1749281400000,
+          "doc_count": 566,
+          "cumulative_requests": {
+            "value": 15520.0
+          },
+          "rate_per_second": {
+            "value": 8.323333333333334
+          }
+        },
+        {
+          "key_as_string": "1749281460000",
+          "key": 1749281460000,
+          "doc_count": 560,
+          "cumulative_requests": {
+            "value": 16080.0
+          },
+          "rate_per_second": {
+            "value": 8.338333333333333
+          }
+        },
+        {
+          "key_as_string": "1749281520000",
+          "key": 1749281520000,
+          "doc_count": 574,
+          "cumulative_requests": {
+            "value": 16654.0
+          },
+          "rate_per_second": {
+            "value": 8.356666666666667
+          }
+        },
+        {
+          "key_as_string": "1749281580000",
+          "key": 1749281580000,
+          "doc_count": 563,
+          "cumulative_requests": {
+            "value": 17217.0
+          },
+          "rate_per_second": {
+            "value": 8.393333333333333
+          }
+        },
+        {
+          "key_as_string": "1749281640000",
+          "key": 1749281640000,
+          "doc_count": 563,
+          "cumulative_requests": {
+            "value": 17780.0
+          },
+          "rate_per_second": {
+            "value": 8.403333333333334
+          }
+        },
+        {
+          "key_as_string": "1749281700000",
+          "key": 1749281700000,
+          "doc_count": 571,
+          "cumulative_requests": {
+            "value": 18351.0
+          },
+          "rate_per_second": {
+            "value": 8.408333333333333
+          }
+        },
+        {
+          "key_as_string": "1749281760000",
+          "key": 1749281760000,
+          "doc_count": 564,
+          "cumulative_requests": {
+            "value": 18915.0
+          },
+          "rate_per_second": {
+            "value": 8.44
+          }
+        },
+        {
+          "key_as_string": "1749281820000",
+          "key": 1749281820000,
+          "doc_count": 570,
+          "cumulative_requests": {
+            "value": 19485.0
+          },
+          "rate_per_second": {
+            "value": 8.453333333333333
+          }
+        },
+        {
+          "key_as_string": "1749281880000",
+          "key": 1749281880000,
+          "doc_count": 571,
+          "cumulative_requests": {
+            "value": 20056.0
+          },
+          "rate_per_second": {
+            "value": 8.483333333333333
+          }
+        },
+        {
+          "key_as_string": "1749281940000",
+          "key": 1749281940000,
+          "doc_count": 570,
+          "cumulative_requests": {
+            "value": 20626.0
+          },
+          "rate_per_second": {
+            "value": 8.503333333333334
+          }
+        },
+        {
+          "key_as_string": "1749282000000",
+          "key": 1749282000000,
+          "doc_count": 563,
+          "cumulative_requests": {
+            "value": 21189.0
+          },
+          "rate_per_second": {
+            "value": 8.51
+          }
+        },
+        {
+          "key_as_string": "1749282060000",
+          "key": 1749282060000,
+          "doc_count": 563,
+          "cumulative_requests": {
+            "value": 21752.0
+          },
+          "rate_per_second": {
+            "value": 8.515
+          }
+        },
+        {
+          "key_as_string": "1749282120000",
+          "key": 1749282120000,
+          "doc_count": 570,
+          "cumulative_requests": {
+            "value": 22322.0
+          },
+          "rate_per_second": {
+            "value": 8.496666666666666
+          }
+        },
+        {
+          "key_as_string": "1749282180000",
+          "key": 1749282180000,
+          "doc_count": 567,
+          "cumulative_requests": {
+            "value": 22889.0
+          },
+          "rate_per_second": {
+            "value": 8.508333333333333
+          }
+        },
+        {
+          "key_as_string": "1749282240000",
+          "key": 1749282240000,
+          "doc_count": 558,
+          "cumulative_requests": {
+            "value": 23447.0
+          },
+          "rate_per_second": {
+            "value": 8.515
+          }
+        },
+        {
+          "key_as_string": "1749282300000",
+          "key": 1749282300000,
+          "doc_count": 768,
+          "cumulative_requests": {
+            "value": 24215.0
+          },
+          "rate_per_second": {
+            "value": 8.493333333333334
+          }
+        },
+        {
+          "key_as_string": "1749282360000",
+          "key": 1749282360000,
+          "doc_count": 1091,
+          "cumulative_requests": {
+            "value": 25306.0
+          },
+          "rate_per_second": {
+            "value": 8.833333333333334
+          }
+        },
+        {
+          "key_as_string": "1749282420000",
+          "key": 1749282420000,
+          "doc_count": 1115,
+          "cumulative_requests": {
+            "value": 26421.0
+          },
+          "rate_per_second": {
+            "value": 9.701666666666666
+          }
+        },
+        {
+          "key_as_string": "1749282480000",
+          "key": 1749282480000,
+          "doc_count": 1090,
+          "cumulative_requests": {
+            "value": 27511.0
+          },
+          "rate_per_second": {
+            "value": 10.608333333333333
+          }
+        },
+        {
+          "key_as_string": "1749282540000",
+          "key": 1749282540000,
+          "doc_count": 1122,
+          "cumulative_requests": {
+            "value": 28633.0
+          },
+          "rate_per_second": {
+            "value": 11.475
+          }
+        },
+        {
+          "key_as_string": "1749282600000",
+          "key": 1749282600000,
+          "doc_count": 1070,
+          "cumulative_requests": {
+            "value": 29703.0
+          },
+          "rate_per_second": {
+            "value": 12.406666666666666
+          }
+        },
+        {
+          "key_as_string": "1749282660000",
+          "key": 1749282660000,
+          "doc_count": 650,
+          "cumulative_requests": {
+            "value": 30353.0
+          },
+          "rate_per_second": {
+            "value": 13.251666666666667
+          }
+        },
+        {
+          "key_as_string": "1749282720000",
+          "key": 1749282720000,
+          "doc_count": 290,
+          "cumulative_requests": {
+            "value": 30643.0
+          },
+          "rate_per_second": {
+            "value": 13.385
+          }
+        },
+        {
+          "key_as_string": "1749282780000",
+          "key": 1749282780000,
+          "doc_count": 292,
+          "cumulative_requests": {
+            "value": 30935.0
+          },
+          "rate_per_second": {
+            "value": 12.923333333333334
+          }
+        },
+        {
+          "key_as_string": "1749282840000",
+          "key": 1749282840000,
+          "doc_count": 291,
+          "cumulative_requests": {
+            "value": 31226.0
+          },
+          "rate_per_second": {
+            "value": 12.48
+          }
+        },
+        {
+          "key_as_string": "1749282900000",
+          "key": 1749282900000,
+          "doc_count": 292,
+          "cumulative_requests": {
+            "value": 31518.0
+          },
+          "rate_per_second": {
+            "value": 11.685
+          }
+        },
+        {
+          "key_as_string": "1749282960000",
+          "key": 1749282960000,
+          "doc_count": 291,
+          "cumulative_requests": {
+            "value": 31809.0
+          },
+          "rate_per_second": {
+            "value": 10.353333333333333
+          }
+        },
+        {
+          "key_as_string": "1749283020000",
+          "key": 1749283020000,
+          "doc_count": 292,
+          "cumulative_requests": {
+            "value": 32101.0
+          },
+          "rate_per_second": {
+            "value": 8.98
+          }
+        },
+        {
+          "key_as_string": "1749283080000",
+          "key": 1749283080000,
+          "doc_count": 288,
+          "cumulative_requests": {
+            "value": 32389.0
+          },
+          "rate_per_second": {
+            "value": 7.65
+          }
+        },
+        {
+          "key_as_string": "1749283140000",
+          "key": 1749283140000,
+          "doc_count": 292,
+          "cumulative_requests": {
+            "value": 32681.0
+          },
+          "rate_per_second": {
+            "value": 6.26
+          }
+        },
+        {
+          "key_as_string": "1749283200000",
+          "key": 1749283200000,
+          "doc_count": 290,
+          "cumulative_requests": {
+            "value": 32971.0
+          },
+          "rate_per_second": {
+            "value": 4.963333333333333
+          }
+        },
+        {
+          "key_as_string": "1749283260000",
+          "key": 1749283260000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 33260.0
+          },
+          "rate_per_second": {
+            "value": 4.363333333333333
+          }
+        },
+        {
+          "key_as_string": "1749283320000",
+          "key": 1749283320000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 33549.0
+          },
+          "rate_per_second": {
+            "value": 4.361666666666666
+          }
+        },
+        {
+          "key_as_string": "1749283380000",
+          "key": 1749283380000,
+          "doc_count": 291,
+          "cumulative_requests": {
+            "value": 33840.0
+          },
+          "rate_per_second": {
+            "value": 4.3566666666666665
+          }
+        },
+        {
+          "key_as_string": "1749283440000",
+          "key": 1749283440000,
+          "doc_count": 290,
+          "cumulative_requests": {
+            "value": 34130.0
+          },
+          "rate_per_second": {
+            "value": 4.3566666666666665
+          }
+        },
+        {
+          "key_as_string": "1749283500000",
+          "key": 1749283500000,
+          "doc_count": 288,
+          "cumulative_requests": {
+            "value": 34418.0
+          },
+          "rate_per_second": {
+            "value": 4.3533333333333335
+          }
+        },
+        {
+          "key_as_string": "1749283560000",
+          "key": 1749283560000,
+          "doc_count": 293,
+          "cumulative_requests": {
+            "value": 34711.0
+          },
+          "rate_per_second": {
+            "value": 4.348333333333334
+          }
+        },
+        {
+          "key_as_string": "1749283620000",
+          "key": 1749283620000,
+          "doc_count": 291,
+          "cumulative_requests": {
+            "value": 35002.0
+          },
+          "rate_per_second": {
+            "value": 4.35
+          }
+        },
+        {
+          "key_as_string": "1749283680000",
+          "key": 1749283680000,
+          "doc_count": 288,
+          "cumulative_requests": {
+            "value": 35290.0
+          },
+          "rate_per_second": {
+            "value": 4.355
+          }
+        },
+        {
+          "key_as_string": "1749283740000",
+          "key": 1749283740000,
+          "doc_count": 291,
+          "cumulative_requests": {
+            "value": 35581.0
+          },
+          "rate_per_second": {
+            "value": 4.348333333333334
+          }
+        },
+        {
+          "key_as_string": "1749283800000",
+          "key": 1749283800000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 35870.0
+          },
+          "rate_per_second": {
+            "value": 4.35
+          }
+        },
+        {
+          "key_as_string": "1749283860000",
+          "key": 1749283860000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 36159.0
+          },
+          "rate_per_second": {
+            "value": 4.35
+          }
+        },
+        {
+          "key_as_string": "1749283920000",
+          "key": 1749283920000,
+          "doc_count": 287,
+          "cumulative_requests": {
+            "value": 36446.0
+          },
+          "rate_per_second": {
+            "value": 4.35
+          }
+        },
+        {
+          "key_as_string": "1749283980000",
+          "key": 1749283980000,
+          "doc_count": 290,
+          "cumulative_requests": {
+            "value": 36736.0
+          },
+          "rate_per_second": {
+            "value": 4.343333333333334
+          }
+        },
+        {
+          "key_as_string": "1749284040000",
+          "key": 1749284040000,
+          "doc_count": 288,
+          "cumulative_requests": {
+            "value": 37024.0
+          },
+          "rate_per_second": {
+            "value": 4.343333333333334
+          }
+        },
+        {
+          "key_as_string": "1749284100000",
+          "key": 1749284100000,
+          "doc_count": 288,
+          "cumulative_requests": {
+            "value": 37312.0
+          },
+          "rate_per_second": {
+            "value": 4.343333333333334
+          }
+        },
+        {
+          "key_as_string": "1749284160000",
+          "key": 1749284160000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 37601.0
+          },
+          "rate_per_second": {
+            "value": 4.335
+          }
+        },
+        {
+          "key_as_string": "1749284220000",
+          "key": 1749284220000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 37890.0
+          },
+          "rate_per_second": {
+            "value": 4.331666666666667
+          }
+        },
+        {
+          "key_as_string": "1749284280000",
+          "key": 1749284280000,
+          "doc_count": 290,
+          "cumulative_requests": {
+            "value": 38180.0
+          },
+          "rate_per_second": {
+            "value": 4.333333333333333
+          }
+        },
+        {
+          "key_as_string": "1749284340000",
+          "key": 1749284340000,
+          "doc_count": 290,
+          "cumulative_requests": {
+            "value": 38470.0
+          },
+          "rate_per_second": {
+            "value": 4.331666666666667
+          }
+        },
+        {
+          "key_as_string": "1749284400000",
+          "key": 1749284400000,
+          "doc_count": 290,
+          "cumulative_requests": {
+            "value": 38760.0
+          },
+          "rate_per_second": {
+            "value": 4.333333333333333
+          }
+        },
+        {
+          "key_as_string": "1749284460000",
+          "key": 1749284460000,
+          "doc_count": 288,
+          "cumulative_requests": {
+            "value": 39048.0
+          },
+          "rate_per_second": {
+            "value": 4.335
+          }
+        },
+        {
+          "key_as_string": "1749284520000",
+          "key": 1749284520000,
+          "doc_count": 290,
+          "cumulative_requests": {
+            "value": 39338.0
+          },
+          "rate_per_second": {
+            "value": 4.336666666666667
+          }
+        },
+        {
+          "key_as_string": "1749284580000",
+          "key": 1749284580000,
+          "doc_count": 287,
+          "cumulative_requests": {
+            "value": 39625.0
+          },
+          "rate_per_second": {
+            "value": 4.336666666666667
+          }
+        },
+        {
+          "key_as_string": "1749284640000",
+          "key": 1749284640000,
+          "doc_count": 288,
+          "cumulative_requests": {
+            "value": 39913.0
+          },
+          "rate_per_second": {
+            "value": 4.335
+          }
+        },
+        {
+          "key_as_string": "1749284700000",
+          "key": 1749284700000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 40202.0
+          },
+          "rate_per_second": {
+            "value": 4.335
+          }
+        },
+        {
+          "key_as_string": "1749284760000",
+          "key": 1749284760000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 40491.0
+          },
+          "rate_per_second": {
+            "value": 4.335
+          }
+        },
+        {
+          "key_as_string": "1749284820000",
+          "key": 1749284820000,
+          "doc_count": 287,
+          "cumulative_requests": {
+            "value": 40778.0
+          },
+          "rate_per_second": {
+            "value": 4.335
+          }
+        },
+        {
+          "key_as_string": "1749284880000",
+          "key": 1749284880000,
+          "doc_count": 287,
+          "cumulative_requests": {
+            "value": 41065.0
+          },
+          "rate_per_second": {
+            "value": 4.33
+          }
+        },
+        {
+          "key_as_string": "1749284940000",
+          "key": 1749284940000,
+          "doc_count": 286,
+          "cumulative_requests": {
+            "value": 41351.0
+          },
+          "rate_per_second": {
+            "value": 4.325
+          }
+        },
+        {
+          "key_as_string": "1749285000000",
+          "key": 1749285000000,
+          "doc_count": 101,
+          "cumulative_requests": {
+            "value": 41452.0
+          },
+          "rate_per_second": {
+            "value": 4.318333333333333
+          }
+        },
+        {
+          "key_as_string": "1749285060000",
+          "key": 1749285060000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285120000",
+          "key": 1749285120000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285180000",
+          "key": 1749285180000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285240000",
+          "key": 1749285240000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285300000",
+          "key": 1749285300000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285360000",
+          "key": 1749285360000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285420000",
+          "key": 1749285420000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285480000",
+          "key": 1749285480000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285540000",
+          "key": 1749285540000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285600000",
+          "key": 1749285600000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285660000",
+          "key": 1749285660000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285720000",
+          "key": 1749285720000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285780000",
+          "key": 1749285780000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285840000",
+          "key": 1749285840000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285900000",
+          "key": 1749285900000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749285960000",
+          "key": 1749285960000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286020000",
+          "key": 1749286020000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286080000",
+          "key": 1749286080000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286140000",
+          "key": 1749286140000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286200000",
+          "key": 1749286200000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286260000",
+          "key": 1749286260000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286320000",
+          "key": 1749286320000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286380000",
+          "key": 1749286380000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286440000",
+          "key": 1749286440000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286500000",
+          "key": 1749286500000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286560000",
+          "key": 1749286560000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286620000",
+          "key": 1749286620000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286680000",
+          "key": 1749286680000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286740000",
+          "key": 1749286740000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286800000",
+          "key": 1749286800000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286860000",
+          "key": 1749286860000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286920000",
+          "key": 1749286920000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749286980000",
+          "key": 1749286980000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287040000",
+          "key": 1749287040000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287100000",
+          "key": 1749287100000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287160000",
+          "key": 1749287160000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287220000",
+          "key": 1749287220000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287280000",
+          "key": 1749287280000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287340000",
+          "key": 1749287340000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287400000",
+          "key": 1749287400000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287460000",
+          "key": 1749287460000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287520000",
+          "key": 1749287520000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287580000",
+          "key": 1749287580000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287640000",
+          "key": 1749287640000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287700000",
+          "key": 1749287700000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287760000",
+          "key": 1749287760000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287820000",
+          "key": 1749287820000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287880000",
+          "key": 1749287880000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749287940000",
+          "key": 1749287940000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 41452.0
+          }
+        },
+        {
+          "key_as_string": "1749288000000",
+          "key": 1749288000000,
+          "doc_count": 264,
+          "cumulative_requests": {
+            "value": 41716.0
+          },
+          "rate_per_second": {
+            "value": 4.006666666666667
+          }
+        },
+        {
+          "key_as_string": "1749288060000",
+          "key": 1749288060000,
+          "doc_count": 288,
+          "cumulative_requests": {
+            "value": 42004.0
+          },
+          "rate_per_second": {
+            "value": 3.9633333333333334
+          }
+        },
+        {
+          "key_as_string": "1749288120000",
+          "key": 1749288120000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 42293.0
+          },
+          "rate_per_second": {
+            "value": 3.965
+          }
+        },
+        {
+          "key_as_string": "1749288180000",
+          "key": 1749288180000,
+          "doc_count": 286,
+          "cumulative_requests": {
+            "value": 42579.0
+          },
+          "rate_per_second": {
+            "value": 3.966666666666667
+          }
+        },
+        {
+          "key_as_string": "1749288240000",
+          "key": 1749288240000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 42868.0
+          },
+          "rate_per_second": {
+            "value": 3.9616666666666664
+          }
+        },
+        {
+          "key_as_string": "1749288300000",
+          "key": 1749288300000,
+          "doc_count": 284,
+          "cumulative_requests": {
+            "value": 43152.0
+          },
+          "rate_per_second": {
+            "value": 3.9616666666666664
+          }
+        },
+        {
+          "key_as_string": "1749288360000",
+          "key": 1749288360000,
+          "doc_count": 286,
+          "cumulative_requests": {
+            "value": 43438.0
+          },
+          "rate_per_second": {
+            "value": 3.9566666666666666
+          }
+        },
+        {
+          "key_as_string": "1749288420000",
+          "key": 1749288420000,
+          "doc_count": 289,
+          "cumulative_requests": {
+            "value": 43727.0
+          },
+          "rate_per_second": {
+            "value": 3.955
+          }
+        },
+        {
+          "key_as_string": "1749288480000",
+          "key": 1749288480000,
+          "doc_count": 46,
+          "cumulative_requests": {
+            "value": 43773.0
+          },
+          "rate_per_second": {
+            "value": 3.96
+          }
+        },
+        {
+          "key_as_string": "1749288540000",
+          "key": 1749288540000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749288600000",
+          "key": 1749288600000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749288660000",
+          "key": 1749288660000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749288720000",
+          "key": 1749288720000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749288780000",
+          "key": 1749288780000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749288840000",
+          "key": 1749288840000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749288900000",
+          "key": 1749288900000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749288960000",
+          "key": 1749288960000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289020000",
+          "key": 1749289020000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289080000",
+          "key": 1749289080000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289140000",
+          "key": 1749289140000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289200000",
+          "key": 1749289200000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289260000",
+          "key": 1749289260000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289320000",
+          "key": 1749289320000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289380000",
+          "key": 1749289380000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289440000",
+          "key": 1749289440000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289500000",
+          "key": 1749289500000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289560000",
+          "key": 1749289560000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289620000",
+          "key": 1749289620000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289680000",
+          "key": 1749289680000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289740000",
+          "key": 1749289740000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289800000",
+          "key": 1749289800000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289860000",
+          "key": 1749289860000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289920000",
+          "key": 1749289920000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749289980000",
+          "key": 1749289980000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290040000",
+          "key": 1749290040000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290100000",
+          "key": 1749290100000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290160000",
+          "key": 1749290160000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290220000",
+          "key": 1749290220000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290280000",
+          "key": 1749290280000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290340000",
+          "key": 1749290340000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290400000",
+          "key": 1749290400000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290460000",
+          "key": 1749290460000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290520000",
+          "key": 1749290520000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290580000",
+          "key": 1749290580000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290640000",
+          "key": 1749290640000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290700000",
+          "key": 1749290700000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290760000",
+          "key": 1749290760000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290820000",
+          "key": 1749290820000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290880000",
+          "key": 1749290880000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749290940000",
+          "key": 1749290940000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291000000",
+          "key": 1749291000000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291060000",
+          "key": 1749291060000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291120000",
+          "key": 1749291120000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291180000",
+          "key": 1749291180000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291240000",
+          "key": 1749291240000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291300000",
+          "key": 1749291300000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291360000",
+          "key": 1749291360000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291420000",
+          "key": 1749291420000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291480000",
+          "key": 1749291480000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291540000",
+          "key": 1749291540000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291600000",
+          "key": 1749291600000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291660000",
+          "key": 1749291660000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291720000",
+          "key": 1749291720000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291780000",
+          "key": 1749291780000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291840000",
+          "key": 1749291840000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291900000",
+          "key": 1749291900000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749291960000",
+          "key": 1749291960000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292020000",
+          "key": 1749292020000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292080000",
+          "key": 1749292080000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292140000",
+          "key": 1749292140000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292200000",
+          "key": 1749292200000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292260000",
+          "key": 1749292260000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292320000",
+          "key": 1749292320000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292380000",
+          "key": 1749292380000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292440000",
+          "key": 1749292440000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292500000",
+          "key": 1749292500000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292560000",
+          "key": 1749292560000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292620000",
+          "key": 1749292620000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292680000",
+          "key": 1749292680000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292740000",
+          "key": 1749292740000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292800000",
+          "key": 1749292800000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292860000",
+          "key": 1749292860000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292920000",
+          "key": 1749292920000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749292980000",
+          "key": 1749292980000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293040000",
+          "key": 1749293040000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293100000",
+          "key": 1749293100000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293160000",
+          "key": 1749293160000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293220000",
+          "key": 1749293220000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293280000",
+          "key": 1749293280000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293340000",
+          "key": 1749293340000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293400000",
+          "key": 1749293400000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293460000",
+          "key": 1749293460000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293520000",
+          "key": 1749293520000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293580000",
+          "key": 1749293580000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293640000",
+          "key": 1749293640000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293700000",
+          "key": 1749293700000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293760000",
+          "key": 1749293760000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293820000",
+          "key": 1749293820000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293880000",
+          "key": 1749293880000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749293940000",
+          "key": 1749293940000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749294000000",
+          "key": 1749294000000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749294060000",
+          "key": 1749294060000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749294120000",
+          "key": 1749294120000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749294180000",
+          "key": 1749294180000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749294240000",
+          "key": 1749294240000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749294300000",
+          "key": 1749294300000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749294360000",
+          "key": 1749294360000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 43773.0
+          }
+        },
+        {
+          "key_as_string": "1749294420000",
+          "key": 1749294420000,
+          "doc_count": 418,
+          "cumulative_requests": {
+            "value": 44191.0
+          },
+          "rate_per_second": {
+            "value": 3.868333333333333
+          }
+        },
+        {
+          "key_as_string": "1749294480000",
+          "key": 1749294480000,
+          "doc_count": 568,
+          "cumulative_requests": {
+            "value": 44759.0
+          },
+          "rate_per_second": {
+            "value": 4.125
+          }
+        },
+        {
+          "key_as_string": "1749294540000",
+          "key": 1749294540000,
+          "doc_count": 565,
+          "cumulative_requests": {
+            "value": 45324.0
+          },
+          "rate_per_second": {
+            "value": 4.591666666666667
+          }
+        },
+        {
+          "key_as_string": "1749294600000",
+          "key": 1749294600000,
+          "doc_count": 568,
+          "cumulative_requests": {
+            "value": 45892.0
+          },
+          "rate_per_second": {
+            "value": 5.051666666666667
+          }
+        },
+        {
+          "key_as_string": "1749294660000",
+          "key": 1749294660000,
+          "doc_count": 568,
+          "cumulative_requests": {
+            "value": 46460.0
+          },
+          "rate_per_second": {
+            "value": 5.5216666666666665
+          }
+        },
+        {
+          "key_as_string": "1749294720000",
+          "key": 1749294720000,
+          "doc_count": 560,
+          "cumulative_requests": {
+            "value": 47020.0
+          },
+          "rate_per_second": {
+            "value": 5.986666666666666
+          }
+        },
+        {
+          "key_as_string": "1749294780000",
+          "key": 1749294780000,
+          "doc_count": 554,
+          "cumulative_requests": {
+            "value": 47574.0
+          },
+          "rate_per_second": {
+            "value": 6.446666666666666
+          }
+        },
+        {
+          "key_as_string": "1749294840000",
+          "key": 1749294840000,
+          "doc_count": 559,
+          "cumulative_requests": {
+            "value": 48133.0
+          },
+          "rate_per_second": {
+            "value": 6.8933333333333335
+          }
+        },
+        {
+          "key_as_string": "1749294900000",
+          "key": 1749294900000,
+          "doc_count": 562,
+          "cumulative_requests": {
+            "value": 48695.0
+          },
+          "rate_per_second": {
+            "value": 7.343333333333334
+          }
+        },
+        {
+          "key_as_string": "1749294960000",
+          "key": 1749294960000,
+          "doc_count": 551,
+          "cumulative_requests": {
+            "value": 49246.0
+          },
+          "rate_per_second": {
+            "value": 8.203333333333333
+          }
+        },
+        {
+          "key_as_string": "1749295020000",
+          "key": 1749295020000,
+          "doc_count": 154,
+          "cumulative_requests": {
+            "value": 49400.0
+          },
+          "rate_per_second": {
+            "value": 8.425
+          }
+        },
+        {
+          "key_as_string": "1749295080000",
+          "key": 1749295080000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295140000",
+          "key": 1749295140000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295200000",
+          "key": 1749295200000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295260000",
+          "key": 1749295260000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295320000",
+          "key": 1749295320000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295380000",
+          "key": 1749295380000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295440000",
+          "key": 1749295440000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295500000",
+          "key": 1749295500000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295560000",
+          "key": 1749295560000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295620000",
+          "key": 1749295620000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295680000",
+          "key": 1749295680000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295740000",
+          "key": 1749295740000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295800000",
+          "key": 1749295800000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295860000",
+          "key": 1749295860000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49400.0
+          }
+        },
+        {
+          "key_as_string": "1749295920000",
+          "key": 1749295920000,
+          "doc_count": 266,
+          "cumulative_requests": {
+            "value": 49666.0
+          },
+          "rate_per_second": {
+            "value": 7.735
+          }
+        },
+        {
+          "key_as_string": "1749295980000",
+          "key": 1749295980000,
+          "doc_count": 290,
+          "cumulative_requests": {
+            "value": 49956.0
+          },
+          "rate_per_second": {
+            "value": 7.236666666666666
+          }
+        },
+        {
+          "key_as_string": "1749296040000",
+          "key": 1749296040000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49956.0
+          }
+        },
+        {
+          "key_as_string": "1749296100000",
+          "key": 1749296100000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49956.0
+          }
+        },
+        {
+          "key_as_string": "1749296160000",
+          "key": 1749296160000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49956.0
+          }
+        },
+        {
+          "key_as_string": "1749296220000",
+          "key": 1749296220000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 49956.0
+          }
+        },
+        {
+          "key_as_string": "1749296280000",
+          "key": 1749296280000,
+          "doc_count": 107,
+          "cumulative_requests": {
+            "value": 50063.0
+          },
+          "rate_per_second": {
+            "value": 6.773333333333333
+          }
+        },
+        {
+          "key_as_string": "1749296340000",
+          "key": 1749296340000,
+          "doc_count": 444,
+          "cumulative_requests": {
+            "value": 50507.0
+          },
+          "rate_per_second": {
+            "value": 6.005
+          }
+        },
+        {
+          "key_as_string": "1749296400000",
+          "key": 1749296400000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 50507.0
+          }
+        },
+        {
+          "key_as_string": "1749296460000",
+          "key": 1749296460000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 50507.0
+          }
+        },
+        {
+          "key_as_string": "1749296520000",
+          "key": 1749296520000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 50507.0
+          }
+        },
+        {
+          "key_as_string": "1749296580000",
+          "key": 1749296580000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 50507.0
+          }
+        },
+        {
+          "key_as_string": "1749296640000",
+          "key": 1749296640000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 50507.0
+          }
+        },
+        {
+          "key_as_string": "1749296700000",
+          "key": 1749296700000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 50507.0
+          }
+        },
+        {
+          "key_as_string": "1749296760000",
+          "key": 1749296760000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 50507.0
+          }
+        },
+        {
+          "key_as_string": "1749296820000",
+          "key": 1749296820000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 50507.0
+          }
+        },
+        {
+          "key_as_string": "1749296880000",
+          "key": 1749296880000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 50507.0
+          }
+        },
+        {
+          "key_as_string": "1749296940000",
+          "key": 1749296940000,
+          "doc_count": 234,
+          "cumulative_requests": {
+            "value": 50741.0
+          },
+          "rate_per_second": {
+            "value": 5.8116666666666665
+          }
+        },
+        {
+          "key_as_string": "1749297000000",
+          "key": 1749297000000,
+          "doc_count": 568,
+          "cumulative_requests": {
+            "value": 51309.0
+          },
+          "rate_per_second": {
+            "value": 5.278333333333333
+          }
+        },
+        {
+          "key_as_string": "1749297060000",
+          "key": 1749297060000,
+          "doc_count": 566,
+          "cumulative_requests": {
+            "value": 51875.0
+          },
+          "rate_per_second": {
+            "value": 5.293333333333333
+          }
+        },
+        {
+          "key_as_string": "1749297120000",
+          "key": 1749297120000,
+          "doc_count": 566,
+          "cumulative_requests": {
+            "value": 52441.0
+          },
+          "rate_per_second": {
+            "value": 5.3
+          }
+        },
+        {
+          "key_as_string": "1749297180000",
+          "key": 1749297180000,
+          "doc_count": 566,
+          "cumulative_requests": {
+            "value": 53007.0
+          },
+          "rate_per_second": {
+            "value": 5.325
+          }
+        },
+        {
+          "key_as_string": "1749297240000",
+          "key": 1749297240000,
+          "doc_count": 573,
+          "cumulative_requests": {
+            "value": 53580.0
+          },
+          "rate_per_second": {
+            "value": 6.011666666666667
+          }
+        },
+        {
+          "key_as_string": "1749297300000",
+          "key": 1749297300000,
+          "doc_count": 569,
+          "cumulative_requests": {
+            "value": 54149.0
+          },
+          "rate_per_second": {
+            "value": 6.523333333333333
+          }
+        },
+        {
+          "key_as_string": "1749297360000",
+          "key": 1749297360000,
+          "doc_count": 571,
+          "cumulative_requests": {
+            "value": 54720.0
+          },
+          "rate_per_second": {
+            "value": 6.988333333333333
+          }
+        },
+        {
+          "key_as_string": "1749297420000",
+          "key": 1749297420000,
+          "doc_count": 568,
+          "cumulative_requests": {
+            "value": 55288.0
+          },
+          "rate_per_second": {
+            "value": 7.761666666666667
+          }
+        },
+        {
+          "key_as_string": "1749297480000",
+          "key": 1749297480000,
+          "doc_count": 565,
+          "cumulative_requests": {
+            "value": 55853.0
+          },
+          "rate_per_second": {
+            "value": 7.968333333333334
+          }
+        },
+        {
+          "key_as_string": "1749297540000",
+          "key": 1749297540000,
+          "doc_count": 568,
+          "cumulative_requests": {
+            "value": 56421.0
+          },
+          "rate_per_second": {
+            "value": 8.52
+          }
+        },
+        {
+          "key_as_string": "1749297600000",
+          "key": 1749297600000,
+          "doc_count": 567,
+          "cumulative_requests": {
+            "value": 56988.0
+          },
+          "rate_per_second": {
+            "value": 8.52
+          }
+        },
+        {
+          "key_as_string": "1749297660000",
+          "key": 1749297660000,
+          "doc_count": 563,
+          "cumulative_requests": {
+            "value": 57551.0
+          },
+          "rate_per_second": {
+            "value": 8.521666666666667
+          }
+        },
+        {
+          "key_as_string": "1749297720000",
+          "key": 1749297720000,
+          "doc_count": 565,
+          "cumulative_requests": {
+            "value": 58116.0
+          },
+          "rate_per_second": {
+            "value": 8.516666666666667
+          }
+        },
+        {
+          "key_as_string": "1749297780000",
+          "key": 1749297780000,
+          "doc_count": 566,
+          "cumulative_requests": {
+            "value": 58682.0
+          },
+          "rate_per_second": {
+            "value": 8.515
+          }
+        },
+        {
+          "key_as_string": "1749297840000",
+          "key": 1749297840000,
+          "doc_count": 575,
+          "cumulative_requests": {
+            "value": 59257.0
+          },
+          "rate_per_second": {
+            "value": 8.503333333333334
+          }
+        },
+        {
+          "key_as_string": "1749297900000",
+          "key": 1749297900000,
+          "doc_count": 562,
+          "cumulative_requests": {
+            "value": 59819.0
+          },
+          "rate_per_second": {
+            "value": 8.513333333333334
+          }
+        },
+        {
+          "key_as_string": "1749297960000",
+          "key": 1749297960000,
+          "doc_count": 564,
+          "cumulative_requests": {
+            "value": 60383.0
+          },
+          "rate_per_second": {
+            "value": 8.498333333333333
+          }
+        },
+        {
+          "key_as_string": "1749298020000",
+          "key": 1749298020000,
+          "doc_count": 564,
+          "cumulative_requests": {
+            "value": 60947.0
+          },
+          "rate_per_second": {
+            "value": 8.491666666666667
+          }
+        },
+        {
+          "key_as_string": "1749298080000",
+          "key": 1749298080000,
+          "doc_count": 562,
+          "cumulative_requests": {
+            "value": 61509.0
+          },
+          "rate_per_second": {
+            "value": 8.49
+          }
+        },
+        {
+          "key_as_string": "1749298140000",
+          "key": 1749298140000,
+          "doc_count": 567,
+          "cumulative_requests": {
+            "value": 62076.0
+          },
+          "rate_per_second": {
+            "value": 8.48
+          }
+        },
+        {
+          "key_as_string": "1749298200000",
+          "key": 1749298200000,
+          "doc_count": 561,
+          "cumulative_requests": {
+            "value": 62637.0
+          },
+          "rate_per_second": {
+            "value": 8.48
+          }
+        },
+        {
+          "key_as_string": "1749298260000",
+          "key": 1749298260000,
+          "doc_count": 569,
+          "cumulative_requests": {
+            "value": 63206.0
+          },
+          "rate_per_second": {
+            "value": 8.476666666666667
+          }
+        },
+        {
+          "key_as_string": "1749298320000",
+          "key": 1749298320000,
+          "doc_count": 572,
+          "cumulative_requests": {
+            "value": 63778.0
+          },
+          "rate_per_second": {
+            "value": 8.483333333333333
+          }
+        },
+        {
+          "key_as_string": "1749298380000",
+          "key": 1749298380000,
+          "doc_count": 564,
+          "cumulative_requests": {
+            "value": 64342.0
+          },
+          "rate_per_second": {
+            "value": 8.493333333333334
+          }
+        },
+        {
+          "key_as_string": "1749298440000",
+          "key": 1749298440000,
+          "doc_count": 569,
+          "cumulative_requests": {
+            "value": 64911.0
+          },
+          "rate_per_second": {
+            "value": 8.475
+          }
+        },
+        {
+          "key_as_string": "1749298500000",
+          "key": 1749298500000,
+          "doc_count": 562,
+          "cumulative_requests": {
+            "value": 65473.0
+          },
+          "rate_per_second": {
+            "value": 8.486666666666666
+          }
+        },
+        {
+          "key_as_string": "1749298560000",
+          "key": 1749298560000,
+          "doc_count": 575,
+          "cumulative_requests": {
+            "value": 66048.0
+          },
+          "rate_per_second": {
+            "value": 8.483333333333333
+          }
+        },
+        {
+          "key_as_string": "1749298620000",
+          "key": 1749298620000,
+          "doc_count": 558,
+          "cumulative_requests": {
+            "value": 66606.0
+          },
+          "rate_per_second": {
+            "value": 8.501666666666667
+          }
+        },
+        {
+          "key_as_string": "1749298680000",
+          "key": 1749298680000,
+          "doc_count": 563,
+          "cumulative_requests": {
+            "value": 67169.0
+          },
+          "rate_per_second": {
+            "value": 8.495
+          }
+        },
+        {
+          "key_as_string": "1749298740000",
+          "key": 1749298740000,
+          "doc_count": 570,
+          "cumulative_requests": {
+            "value": 67739.0
+          },
+          "rate_per_second": {
+            "value": 8.488333333333333
+          }
+        },
+        {
+          "key_as_string": "1749298800000",
+          "key": 1749298800000,
+          "doc_count": 570,
+          "cumulative_requests": {
+            "value": 68309.0
+          },
+          "rate_per_second": {
+            "value": 8.503333333333334
+          }
+        },
+        {
+          "key_as_string": "1749298860000",
+          "key": 1749298860000,
+          "doc_count": 569,
+          "cumulative_requests": {
+            "value": 68878.0
+          },
+          "rate_per_second": {
+            "value": 8.505
+          }
+        },
+        {
+          "key_as_string": "1749298920000",
+          "key": 1749298920000,
+          "doc_count": 572,
+          "cumulative_requests": {
+            "value": 69450.0
+          },
+          "rate_per_second": {
+            "value": 8.5
+          }
+        },
+        {
+          "key_as_string": "1749298980000",
+          "key": 1749298980000,
+          "doc_count": 559,
+          "cumulative_requests": {
+            "value": 70009.0
+          },
+          "rate_per_second": {
+            "value": 8.513333333333334
+          }
+        },
+        {
+          "key_as_string": "1749299040000",
+          "key": 1749299040000,
+          "doc_count": 567,
+          "cumulative_requests": {
+            "value": 70576.0
+          },
+          "rate_per_second": {
+            "value": 8.496666666666666
+          }
+        },
+        {
+          "key_as_string": "1749299100000",
+          "key": 1749299100000,
+          "doc_count": 570,
+          "cumulative_requests": {
+            "value": 71146.0
+          },
+          "rate_per_second": {
+            "value": 8.505
+          }
+        },
+        {
+          "key_as_string": "1749299160000",
+          "key": 1749299160000,
+          "doc_count": 561,
+          "cumulative_requests": {
+            "value": 71707.0
+          },
+          "rate_per_second": {
+            "value": 8.496666666666666
+          }
+        },
+        {
+          "key_as_string": "1749299220000",
+          "key": 1749299220000,
+          "doc_count": 572,
+          "cumulative_requests": {
+            "value": 72279.0
+          },
+          "rate_per_second": {
+            "value": 8.501666666666667
+          }
+        },
+        {
+          "key_as_string": "1749299280000",
+          "key": 1749299280000,
+          "doc_count": 564,
+          "cumulative_requests": {
+            "value": 72843.0
+          },
+          "rate_per_second": {
+            "value": 8.516666666666667
+          }
+        },
+        {
+          "key_as_string": "1749299340000",
+          "key": 1749299340000,
+          "doc_count": 564,
+          "cumulative_requests": {
+            "value": 73407.0
+          },
+          "rate_per_second": {
+            "value": 8.506666666666666
+          }
+        },
+        {
+          "key_as_string": "1749299400000",
+          "key": 1749299400000,
+          "doc_count": 565,
+          "cumulative_requests": {
+            "value": 73972.0
+          },
+          "rate_per_second": {
+            "value": 8.496666666666666
+          }
+        },
+        {
+          "key_as_string": "1749299460000",
+          "key": 1749299460000,
+          "doc_count": 567,
+          "cumulative_requests": {
+            "value": 74539.0
+          },
+          "rate_per_second": {
+            "value": 8.49
+          }
+        },
+        {
+          "key_as_string": "1749299520000",
+          "key": 1749299520000,
+          "doc_count": 562,
+          "cumulative_requests": {
+            "value": 75101.0
+          },
+          "rate_per_second": {
+            "value": 8.481666666666667
+          }
+        },
+        {
+          "key_as_string": "1749299580000",
+          "key": 1749299580000,
+          "doc_count": 564,
+          "cumulative_requests": {
+            "value": 75665.0
+          },
+          "rate_per_second": {
+            "value": 8.486666666666666
+          }
+        },
+        {
+          "key_as_string": "1749299640000",
+          "key": 1749299640000,
+          "doc_count": 568,
+          "cumulative_requests": {
+            "value": 76233.0
+          },
+          "rate_per_second": {
+            "value": 8.481666666666667
+          }
+        },
+        {
+          "key_as_string": "1749299700000",
+          "key": 1749299700000,
+          "doc_count": 562,
+          "cumulative_requests": {
+            "value": 76795.0
+          },
+          "rate_per_second": {
+            "value": 8.478333333333333
+          }
+        },
+        {
+          "key_as_string": "1749299760000",
+          "key": 1749299760000,
+          "doc_count": 551,
+          "cumulative_requests": {
+            "value": 77346.0
+          },
+          "rate_per_second": {
+            "value": 8.48
+          }
+        },
+        {
+          "key_as_string": "1749299820000",
+          "key": 1749299820000,
+          "doc_count": 553,
+          "cumulative_requests": {
+            "value": 77899.0
+          },
+          "rate_per_second": {
+            "value": 8.445
+          }
+        },
+        {
+          "key_as_string": "1749299880000",
+          "key": 1749299880000,
+          "doc_count": 546,
+          "cumulative_requests": {
+            "value": 78445.0
+          },
+          "rate_per_second": {
+            "value": 8.426666666666666
+          }
+        },
+        {
+          "key_as_string": "1749299940000",
+          "key": 1749299940000,
+          "doc_count": 557,
+          "cumulative_requests": {
+            "value": 79002.0
+          },
+          "rate_per_second": {
+            "value": 8.396666666666667
+          }
+        },
+        {
+          "key_as_string": "1749300000000",
+          "key": 1749300000000,
+          "doc_count": 563,
+          "cumulative_requests": {
+            "value": 79565.0
+          },
+          "rate_per_second": {
+            "value": 8.383333333333333
+          }
+        },
+        {
+          "key_as_string": "1749300060000",
+          "key": 1749300060000,
+          "doc_count": 551,
+          "cumulative_requests": {
+            "value": 80116.0
+          },
+          "rate_per_second": {
+            "value": 8.376666666666667
+          }
+        },
+        {
+          "key_as_string": "1749300120000",
+          "key": 1749300120000,
+          "doc_count": 557,
+          "cumulative_requests": {
+            "value": 80673.0
+          },
+          "rate_per_second": {
+            "value": 8.358333333333333
+          }
+        },
+        {
+          "key_as_string": "1749300180000",
+          "key": 1749300180000,
+          "doc_count": 552,
+          "cumulative_requests": {
+            "value": 81225.0
+          },
+          "rate_per_second": {
+            "value": 8.346666666666666
+          }
+        },
+        {
+          "key_as_string": "1749300240000",
+          "key": 1749300240000,
+          "doc_count": 562,
+          "cumulative_requests": {
+            "value": 81787.0
+          },
+          "rate_per_second": {
+            "value": 8.32
+          }
+        },
+        {
+          "key_as_string": "1749300300000",
+          "key": 1749300300000,
+          "doc_count": 552,
+          "cumulative_requests": {
+            "value": 82339.0
+          },
+          "rate_per_second": {
+            "value": 8.32
+          }
+        },
+        {
+          "key_as_string": "1749300360000",
+          "key": 1749300360000,
+          "doc_count": 561,
+          "cumulative_requests": {
+            "value": 82900.0
+          },
+          "rate_per_second": {
+            "value": 8.321666666666667
+          }
+        },
+        {
+          "key_as_string": "1749300420000",
+          "key": 1749300420000,
+          "doc_count": 560,
+          "cumulative_requests": {
+            "value": 83460.0
+          },
+          "rate_per_second": {
+            "value": 8.335
+          }
+        },
+        {
+          "key_as_string": "1749300480000",
+          "key": 1749300480000,
+          "doc_count": 564,
+          "cumulative_requests": {
+            "value": 84024.0
+          },
+          "rate_per_second": {
+            "value": 8.358333333333333
+          }
+        },
+        {
+          "key_as_string": "1749300540000",
+          "key": 1749300540000,
+          "doc_count": 559,
+          "cumulative_requests": {
+            "value": 84583.0
+          },
+          "rate_per_second": {
+            "value": 8.37
+          }
+        },
+        {
+          "key_as_string": "1749300600000",
+          "key": 1749300600000,
+          "doc_count": 555,
+          "cumulative_requests": {
+            "value": 85138.0
+          },
+          "rate_per_second": {
+            "value": 8.363333333333333
+          }
+        },
+        {
+          "key_as_string": "1749300660000",
+          "key": 1749300660000,
+          "doc_count": 553,
+          "cumulative_requests": {
+            "value": 85691.0
+          },
+          "rate_per_second": {
+            "value": 8.37
+          }
+        },
+        {
+          "key_as_string": "1749300720000",
+          "key": 1749300720000,
+          "doc_count": 553,
+          "cumulative_requests": {
+            "value": 86244.0
+          },
+          "rate_per_second": {
+            "value": 8.363333333333333
+          }
+        },
+        {
+          "key_as_string": "1749300780000",
+          "key": 1749300780000,
+          "doc_count": 550,
+          "cumulative_requests": {
+            "value": 86794.0
+          },
+          "rate_per_second": {
+            "value": 8.365
+          }
+        },
+        {
+          "key_as_string": "1749300840000",
+          "key": 1749300840000,
+          "doc_count": 552,
+          "cumulative_requests": {
+            "value": 87346.0
+          },
+          "rate_per_second": {
+            "value": 8.345
+          }
+        },
+        {
+          "key_as_string": "1749300900000",
+          "key": 1749300900000,
+          "doc_count": 557,
+          "cumulative_requests": {
+            "value": 87903.0
+          },
+          "rate_per_second": {
+            "value": 8.345
+          }
+        },
+        {
+          "key_as_string": "1749300960000",
+          "key": 1749300960000,
+          "doc_count": 556,
+          "cumulative_requests": {
+            "value": 88459.0
+          },
+          "rate_per_second": {
+            "value": 8.338333333333333
+          }
+        },
+        {
+          "key_as_string": "1749301020000",
+          "key": 1749301020000,
+          "doc_count": 557,
+          "cumulative_requests": {
+            "value": 89016.0
+          },
+          "rate_per_second": {
+            "value": 8.331666666666667
+          }
+        },
+        {
+          "key_as_string": "1749301080000",
+          "key": 1749301080000,
+          "doc_count": 556,
+          "cumulative_requests": {
+            "value": 89572.0
+          },
+          "rate_per_second": {
+            "value": 8.32
+          }
+        },
+        {
+          "key_as_string": "1749301140000",
+          "key": 1749301140000,
+          "doc_count": 552,
+          "cumulative_requests": {
+            "value": 90124.0
+          },
+          "rate_per_second": {
+            "value": 8.315
+          }
+        },
+        {
+          "key_as_string": "1749301200000",
+          "key": 1749301200000,
+          "doc_count": 547,
+          "cumulative_requests": {
+            "value": 90671.0
+          },
+          "rate_per_second": {
+            "value": 8.31
+          }
+        },
+        {
+          "key_as_string": "1749301260000",
+          "key": 1749301260000,
+          "doc_count": 550,
+          "cumulative_requests": {
+            "value": 91221.0
+          },
+          "rate_per_second": {
+            "value": 8.3
+          }
+        },
+        {
+          "key_as_string": "1749301320000",
+          "key": 1749301320000,
+          "doc_count": 550,
+          "cumulative_requests": {
+            "value": 91771.0
+          },
+          "rate_per_second": {
+            "value": 8.295
+          }
+        },
+        {
+          "key_as_string": "1749301380000",
+          "key": 1749301380000,
+          "doc_count": 558,
+          "cumulative_requests": {
+            "value": 92329.0
+          },
+          "rate_per_second": {
+            "value": 8.295
+          }
+        },
+        {
+          "key_as_string": "1749301440000",
+          "key": 1749301440000,
+          "doc_count": 551,
+          "cumulative_requests": {
+            "value": 92880.0
+          },
+          "rate_per_second": {
+            "value": 8.305
+          }
+        },
+        {
+          "key_as_string": "1749301500000",
+          "key": 1749301500000,
+          "doc_count": 558,
+          "cumulative_requests": {
+            "value": 93438.0
+          },
+          "rate_per_second": {
+            "value": 8.295
+          }
+        },
+        {
+          "key_as_string": "1749301560000",
+          "key": 1749301560000,
+          "doc_count": 524,
+          "cumulative_requests": {
+            "value": 93962.0
+          },
+          "rate_per_second": {
+            "value": 8.298333333333334
+          }
+        },
+        {
+          "key_as_string": "1749301620000",
+          "key": 1749301620000,
+          "doc_count": 0,
+          "cumulative_requests": {
+            "value": 93962.0
+          }
+        }
+      ]
+    }
+  }
+}

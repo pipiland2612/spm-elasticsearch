@@ -1,11 +1,11 @@
-service=${1:-customer}  # Default to 'redis' if no argument is provided
+service=${1:-redis}  # Default to 'redis' if no argument is provided
 
 curl --request GET \
   --url http://localhost:9200/jaeger-main-jaeger-span-2025-06-07/_search \
   --header 'content-type: application/json' \
   --header 'host: localhost:9200' \
   --header 'user-agent: vscode-restclient' \
-  --data @- <<EOF | jq . > ./json/mean_data.json
+  --data @- <<EOF | jq . > ./json/mean_getCallRate.json
 {
   "size": 0,
   "query": {

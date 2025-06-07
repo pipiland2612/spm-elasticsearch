@@ -10,7 +10,7 @@ curl "http://localhost:16686/api/metrics/calls?service=${service}&endTs=${curren
   -H 'Sec-Fetch-Site: same-origin' \
   -H 'sec-ch-ua: "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "macOS"' | jq . > ./json/spm_data.json
+  -H 'sec-ch-ua-platform: "macOS"' | jq . > ./json/spm_getCallRate.json
 
 
 curl --request GET \
@@ -18,7 +18,7 @@ curl --request GET \
   --header 'content-type: application/json' \
   --header 'host: localhost:9200' \
   --header 'user-agent: vscode-restclient' \
-  --data @- <<EOF | jq . > ./json/es_data.json
+  --data @- <<EOF | jq . > ./json/es_getCallRate.json
 {
   "size": 0,
   "query": {
@@ -69,4 +69,4 @@ curl --request GET \
 }
 EOF
 
-python3 ./python/plot-getCallRate-data.py
+python3 ./python/plot_getCallRate.py

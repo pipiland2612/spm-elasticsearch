@@ -1,0 +1,5611 @@
+{
+  "took": 10,
+  "timed_out": false,
+  "_shards": {
+    "total": 2,
+    "successful": 2,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 915,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "minute_buckets": {
+      "buckets": [
+        {
+          "key_as_string": "1749281340000",
+          "key": 1749281340000,
+          "doc_count": 10,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 9721.5,
+              "95.0": 90153.79999999987
+            }
+          }
+        },
+        {
+          "key_as_string": "1749281400000",
+          "key": 1749281400000,
+          "doc_count": 22,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 7384.5,
+              "95.0": 16826.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9721.5,
+              "95.0": 90153.79999999987
+            }
+          }
+        },
+        {
+          "key_as_string": "1749281460000",
+          "key": 1749281460000,
+          "doc_count": 11,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 8462.0,
+              "95.0": 14773.5
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9229.0,
+              "95.0": 26793.399999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749281520000",
+          "key": 1749281520000,
+          "doc_count": 79,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 5886.0,
+              "95.0": 51248.099999999795
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 8596.0,
+              "95.0": 22472.499999999993
+            }
+          }
+        },
+        {
+          "key_as_string": "1749281580000",
+          "key": 1749281580000,
+          "doc_count": 11,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 3373.0,
+              "95.0": 5362.5
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 7082.0,
+              "95.0": 38168.89999999996
+            }
+          }
+        },
+        {
+          "key_as_string": "1749281640000",
+          "key": 1749281640000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6142.0,
+              "95.0": 36011.79999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749281700000",
+          "key": 1749281700000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6142.0,
+              "95.0": 36011.79999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749281760000",
+          "key": 1749281760000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6142.0,
+              "95.0": 36011.79999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749281820000",
+          "key": 1749281820000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6142.0,
+              "95.0": 36011.79999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749281880000",
+          "key": 1749281880000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6142.0,
+              "95.0": 36011.79999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749281940000",
+          "key": 1749281940000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6142.0,
+              "95.0": 36011.79999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282000000",
+          "key": 1749282000000,
+          "doc_count": 8,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 17843.5,
+              "95.0": 20711.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 5678.0,
+              "95.0": 34130.799999999974
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282060000",
+          "key": 1749282060000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 5895.0,
+              "95.0": 36796.199999999975
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282120000",
+          "key": 1749282120000,
+          "doc_count": 11,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 31889.0,
+              "95.0": 45045.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 5782.0,
+              "95.0": 39760.14999999992
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282180000",
+          "key": 1749282180000,
+          "doc_count": 3,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 5443.0,
+              "95.0": 9578.5
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16136.0,
+              "95.0": 44315.6
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282240000",
+          "key": 1749282240000,
+          "doc_count": 65,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 6829.0,
+              "95.0": 35706.599999999984
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17843.5,
+              "95.0": 44720.4
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282300000",
+          "key": 1749282300000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 7935.0,
+              "95.0": 42635.600000000006
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282360000",
+          "key": 1749282360000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 7935.0,
+              "95.0": 42635.600000000006
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282420000",
+          "key": 1749282420000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 7935.0,
+              "95.0": 42635.600000000006
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282480000",
+          "key": 1749282480000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 7935.0,
+              "95.0": 42635.600000000006
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282540000",
+          "key": 1749282540000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 7935.0,
+              "95.0": 42635.600000000006
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282600000",
+          "key": 1749282600000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 7935.0,
+              "95.0": 42635.600000000006
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282660000",
+          "key": 1749282660000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 7283.0,
+              "95.0": 43522.299999999996
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282720000",
+          "key": 1749282720000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 7283.0,
+              "95.0": 43522.299999999996
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282780000",
+          "key": 1749282780000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6718.5,
+              "95.0": 34855.79999999999
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282840000",
+          "key": 1749282840000,
+          "doc_count": 43,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 6920.0,
+              "95.0": 21115.1
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6829.0,
+              "95.0": 35706.599999999984
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282900000",
+          "key": 1749282900000,
+          "doc_count": 1,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 3820.0,
+              "95.0": 3820.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6920.0,
+              "95.0": 21115.1
+            }
+          }
+        },
+        {
+          "key_as_string": "1749282960000",
+          "key": 1749282960000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6191.5,
+              "95.0": 21078.65
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283020000",
+          "key": 1749283020000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6191.5,
+              "95.0": 21078.65
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283080000",
+          "key": 1749283080000,
+          "doc_count": 11,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 13234.0,
+              "95.0": 27164.5
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 6191.5,
+              "95.0": 21078.65
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283140000",
+          "key": 1749283140000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 8258.0,
+              "95.0": 23773.599999999995
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283200000",
+          "key": 1749283200000,
+          "doc_count": 9,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 25078.0,
+              "95.0": 34119.2
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 8258.0,
+              "95.0": 23773.599999999995
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283260000",
+          "key": 1749283260000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 11357.5,
+              "95.0": 27253.849999999988
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283320000",
+          "key": 1749283320000,
+          "doc_count": 1,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 9281.0,
+              "95.0": 9281.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 11357.5,
+              "95.0": 27253.849999999988
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283380000",
+          "key": 1749283380000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 11246.0,
+              "95.0": 27135.799999999992
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283440000",
+          "key": 1749283440000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 11246.0,
+              "95.0": 27135.799999999992
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283500000",
+          "key": 1749283500000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 13255.5,
+              "95.0": 30779.1
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283560000",
+          "key": 1749283560000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 13277.0,
+              "95.0": 30946.0
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283620000",
+          "key": 1749283620000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 13277.0,
+              "95.0": 30946.0
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283680000",
+          "key": 1749283680000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 13277.0,
+              "95.0": 30946.0
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283740000",
+          "key": 1749283740000,
+          "doc_count": 12,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 8128.0,
+              "95.0": 18042.35
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 23656.0,
+              "95.0": 33576.59999999999
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283800000",
+          "key": 1749283800000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 12205.0,
+              "95.0": 27489.949999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283860000",
+          "key": 1749283860000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 8934.0,
+              "95.0": 17938.199999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283920000",
+          "key": 1749283920000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 8934.0,
+              "95.0": 17938.199999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749283980000",
+          "key": 1749283980000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 8128.0,
+              "95.0": 18042.35
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284040000",
+          "key": 1749284040000,
+          "doc_count": 44,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 11389.5,
+              "95.0": 22371.4
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 8128.0,
+              "95.0": 18042.35
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284100000",
+          "key": 1749284100000,
+          "doc_count": 28,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 12086.0,
+              "95.0": 31981.55
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 10975.0,
+              "95.0": 21265.0
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284160000",
+          "key": 1749284160000,
+          "doc_count": 4,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 7895.0,
+              "95.0": 23983.899999999994
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 11218.5,
+              "95.0": 27570.699999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284220000",
+          "key": 1749284220000,
+          "doc_count": 25,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 21051.0,
+              "95.0": 60267.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 10975.0,
+              "95.0": 27410.299999999992
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284280000",
+          "key": 1749284280000,
+          "doc_count": 71,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 8462.0,
+              "95.0": 54151.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 11209.0,
+              "95.0": 35008.999999999956
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284340000",
+          "key": 1749284340000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9311.0,
+              "95.0": 42963.34999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284400000",
+          "key": 1749284400000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9589.0,
+              "95.0": 44743.09999999998
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284460000",
+          "key": 1749284460000,
+          "doc_count": 20,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 9885.5,
+              "95.0": 19430.55
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9589.0,
+              "95.0": 44743.09999999998
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284520000",
+          "key": 1749284520000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9696.5,
+              "95.0": 40758.94999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284580000",
+          "key": 1749284580000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9696.5,
+              "95.0": 40758.94999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284640000",
+          "key": 1749284640000,
+          "doc_count": 14,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 17982.5,
+              "95.0": 35866.84999999999
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9696.5,
+              "95.0": 40758.94999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284700000",
+          "key": 1749284700000,
+          "doc_count": 11,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 18610.0,
+              "95.0": 56755.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9311.0,
+              "95.0": 51825.54999999993
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284760000",
+          "key": 1749284760000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9402.0,
+              "95.0": 58571.599999999926
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284820000",
+          "key": 1749284820000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9558.0,
+              "95.0": 59422.0
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284880000",
+          "key": 1749284880000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 9185.0,
+              "95.0": 52624.75
+            }
+          }
+        },
+        {
+          "key_as_string": "1749284940000",
+          "key": 1749284940000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 11313.0,
+              "95.0": 51903.399999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285000000",
+          "key": 1749285000000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 11313.0,
+              "95.0": 51903.399999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285060000",
+          "key": 1749285060000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 11313.0,
+              "95.0": 51903.399999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285120000",
+          "key": 1749285120000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18610.0,
+              "95.0": 53697.799999999996
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285180000",
+          "key": 1749285180000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18610.0,
+              "95.0": 53697.799999999996
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285240000",
+          "key": 1749285240000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18610.0,
+              "95.0": 53697.799999999996
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285300000",
+          "key": 1749285300000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18610.0,
+              "95.0": 56755.0
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285360000",
+          "key": 1749285360000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285420000",
+          "key": 1749285420000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285480000",
+          "key": 1749285480000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285540000",
+          "key": 1749285540000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285600000",
+          "key": 1749285600000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285660000",
+          "key": 1749285660000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285720000",
+          "key": 1749285720000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285780000",
+          "key": 1749285780000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285840000",
+          "key": 1749285840000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285900000",
+          "key": 1749285900000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749285960000",
+          "key": 1749285960000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286020000",
+          "key": 1749286020000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286080000",
+          "key": 1749286080000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286140000",
+          "key": 1749286140000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286200000",
+          "key": 1749286200000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286260000",
+          "key": 1749286260000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286320000",
+          "key": 1749286320000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286380000",
+          "key": 1749286380000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286440000",
+          "key": 1749286440000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286500000",
+          "key": 1749286500000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286560000",
+          "key": 1749286560000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286620000",
+          "key": 1749286620000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286680000",
+          "key": 1749286680000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286740000",
+          "key": 1749286740000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286800000",
+          "key": 1749286800000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286860000",
+          "key": 1749286860000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286920000",
+          "key": 1749286920000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749286980000",
+          "key": 1749286980000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287040000",
+          "key": 1749287040000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287100000",
+          "key": 1749287100000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287160000",
+          "key": 1749287160000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287220000",
+          "key": 1749287220000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287280000",
+          "key": 1749287280000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287340000",
+          "key": 1749287340000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287400000",
+          "key": 1749287400000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287460000",
+          "key": 1749287460000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287520000",
+          "key": 1749287520000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287580000",
+          "key": 1749287580000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287640000",
+          "key": 1749287640000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287700000",
+          "key": 1749287700000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287760000",
+          "key": 1749287760000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287820000",
+          "key": 1749287820000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287880000",
+          "key": 1749287880000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749287940000",
+          "key": 1749287940000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288000000",
+          "key": 1749288000000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288060000",
+          "key": 1749288060000,
+          "doc_count": 11,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288120000",
+          "key": 1749288120000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288180000",
+          "key": 1749288180000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288240000",
+          "key": 1749288240000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288300000",
+          "key": 1749288300000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288360000",
+          "key": 1749288360000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288420000",
+          "key": 1749288420000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288480000",
+          "key": 1749288480000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288540000",
+          "key": 1749288540000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288600000",
+          "key": 1749288600000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288660000",
+          "key": 1749288660000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16078.0,
+              "95.0": 32910.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288720000",
+          "key": 1749288720000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288780000",
+          "key": 1749288780000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288840000",
+          "key": 1749288840000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288900000",
+          "key": 1749288900000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749288960000",
+          "key": 1749288960000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289020000",
+          "key": 1749289020000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289080000",
+          "key": 1749289080000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289140000",
+          "key": 1749289140000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289200000",
+          "key": 1749289200000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289260000",
+          "key": 1749289260000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289320000",
+          "key": 1749289320000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289380000",
+          "key": 1749289380000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289440000",
+          "key": 1749289440000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289500000",
+          "key": 1749289500000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289560000",
+          "key": 1749289560000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289620000",
+          "key": 1749289620000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289680000",
+          "key": 1749289680000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289740000",
+          "key": 1749289740000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289800000",
+          "key": 1749289800000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289860000",
+          "key": 1749289860000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289920000",
+          "key": 1749289920000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749289980000",
+          "key": 1749289980000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290040000",
+          "key": 1749290040000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290100000",
+          "key": 1749290100000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290160000",
+          "key": 1749290160000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290220000",
+          "key": 1749290220000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290280000",
+          "key": 1749290280000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290340000",
+          "key": 1749290340000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290400000",
+          "key": 1749290400000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290460000",
+          "key": 1749290460000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290520000",
+          "key": 1749290520000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290580000",
+          "key": 1749290580000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290640000",
+          "key": 1749290640000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290700000",
+          "key": 1749290700000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290760000",
+          "key": 1749290760000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290820000",
+          "key": 1749290820000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290880000",
+          "key": 1749290880000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749290940000",
+          "key": 1749290940000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291000000",
+          "key": 1749291000000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291060000",
+          "key": 1749291060000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291120000",
+          "key": 1749291120000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291180000",
+          "key": 1749291180000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291240000",
+          "key": 1749291240000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291300000",
+          "key": 1749291300000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291360000",
+          "key": 1749291360000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291420000",
+          "key": 1749291420000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291480000",
+          "key": 1749291480000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291540000",
+          "key": 1749291540000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291600000",
+          "key": 1749291600000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291660000",
+          "key": 1749291660000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291720000",
+          "key": 1749291720000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291780000",
+          "key": 1749291780000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291840000",
+          "key": 1749291840000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291900000",
+          "key": 1749291900000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749291960000",
+          "key": 1749291960000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292020000",
+          "key": 1749292020000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292080000",
+          "key": 1749292080000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292140000",
+          "key": 1749292140000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292200000",
+          "key": 1749292200000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292260000",
+          "key": 1749292260000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292320000",
+          "key": 1749292320000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292380000",
+          "key": 1749292380000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292440000",
+          "key": 1749292440000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292500000",
+          "key": 1749292500000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292560000",
+          "key": 1749292560000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292620000",
+          "key": 1749292620000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292680000",
+          "key": 1749292680000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292740000",
+          "key": 1749292740000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292800000",
+          "key": 1749292800000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292860000",
+          "key": 1749292860000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292920000",
+          "key": 1749292920000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749292980000",
+          "key": 1749292980000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293040000",
+          "key": 1749293040000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293100000",
+          "key": 1749293100000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293160000",
+          "key": 1749293160000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293220000",
+          "key": 1749293220000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293280000",
+          "key": 1749293280000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293340000",
+          "key": 1749293340000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293400000",
+          "key": 1749293400000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293460000",
+          "key": 1749293460000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293520000",
+          "key": 1749293520000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293580000",
+          "key": 1749293580000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293640000",
+          "key": 1749293640000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293700000",
+          "key": 1749293700000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293760000",
+          "key": 1749293760000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293820000",
+          "key": 1749293820000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293880000",
+          "key": 1749293880000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749293940000",
+          "key": 1749293940000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294000000",
+          "key": 1749294000000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294060000",
+          "key": 1749294060000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294120000",
+          "key": 1749294120000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294180000",
+          "key": 1749294180000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294240000",
+          "key": 1749294240000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294300000",
+          "key": 1749294300000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294360000",
+          "key": 1749294360000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294420000",
+          "key": 1749294420000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294480000",
+          "key": 1749294480000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294540000",
+          "key": 1749294540000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294600000",
+          "key": 1749294600000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294660000",
+          "key": 1749294660000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294720000",
+          "key": 1749294720000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294780000",
+          "key": 1749294780000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294840000",
+          "key": 1749294840000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294900000",
+          "key": 1749294900000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749294960000",
+          "key": 1749294960000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295020000",
+          "key": 1749295020000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295080000",
+          "key": 1749295080000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295140000",
+          "key": 1749295140000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295200000",
+          "key": 1749295200000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295260000",
+          "key": 1749295260000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295320000",
+          "key": 1749295320000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295380000",
+          "key": 1749295380000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295440000",
+          "key": 1749295440000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295500000",
+          "key": 1749295500000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295560000",
+          "key": 1749295560000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295620000",
+          "key": 1749295620000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295680000",
+          "key": 1749295680000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295740000",
+          "key": 1749295740000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295800000",
+          "key": 1749295800000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295860000",
+          "key": 1749295860000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295920000",
+          "key": 1749295920000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749295980000",
+          "key": 1749295980000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296040000",
+          "key": 1749296040000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296100000",
+          "key": 1749296100000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296160000",
+          "key": 1749296160000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296220000",
+          "key": 1749296220000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296280000",
+          "key": 1749296280000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296340000",
+          "key": 1749296340000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296400000",
+          "key": 1749296400000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296460000",
+          "key": 1749296460000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296520000",
+          "key": 1749296520000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296580000",
+          "key": 1749296580000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296640000",
+          "key": 1749296640000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296700000",
+          "key": 1749296700000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296760000",
+          "key": 1749296760000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296820000",
+          "key": 1749296820000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296880000",
+          "key": 1749296880000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749296940000",
+          "key": 1749296940000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297000000",
+          "key": 1749297000000,
+          "doc_count": 56,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 19926.5,
+              "95.0": 31547.25
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297060000",
+          "key": 1749297060000,
+          "doc_count": 72,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 17393.5,
+              "95.0": 32511.400000000005
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 19926.5,
+              "95.0": 31547.25
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297120000",
+          "key": 1749297120000,
+          "doc_count": 1,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 15958.0,
+              "95.0": 15958.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18422.0,
+              "95.0": 32671.249999999985
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297180000",
+          "key": 1749297180000,
+          "doc_count": 22,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 17625.5,
+              "95.0": 24424.399999999998
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18347.0,
+              "95.0": 32589.99999999999
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297240000",
+          "key": 1749297240000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18148.0,
+              "95.0": 31330.0
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297300000",
+          "key": 1749297300000,
+          "doc_count": 24,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 15331.5,
+              "95.0": 25847.8
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18148.0,
+              "95.0": 31330.0
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297360000",
+          "key": 1749297360000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17429.0,
+              "95.0": 31001.6
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297420000",
+          "key": 1749297420000,
+          "doc_count": 2,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 18869.5,
+              "95.0": 23944.15
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17429.0,
+              "95.0": 31001.6
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297480000",
+          "key": 1749297480000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17429.0,
+              "95.0": 30995.399999999998
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297540000",
+          "key": 1749297540000,
+          "doc_count": 1,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 378.0,
+              "95.0": 378.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17429.0,
+              "95.0": 30995.399999999998
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297600000",
+          "key": 1749297600000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17393.5,
+              "95.0": 30992.3
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297660000",
+          "key": 1749297660000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17264.0,
+              "95.0": 30337.35
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297720000",
+          "key": 1749297720000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16304.0,
+              "95.0": 24993.449999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297780000",
+          "key": 1749297780000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 16395.0,
+              "95.0": 25023.399999999998
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297840000",
+          "key": 1749297840000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 14450.0,
+              "95.0": 25744.6
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297900000",
+          "key": 1749297900000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 14450.0,
+              "95.0": 25744.6
+            }
+          }
+        },
+        {
+          "key_as_string": "1749297960000",
+          "key": 1749297960000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 13231.0,
+              "95.0": 23380.3
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298020000",
+          "key": 1749298020000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 13231.0,
+              "95.0": 23380.3
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298080000",
+          "key": 1749298080000,
+          "doc_count": 32,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 21661.0,
+              "95.0": 38277.95
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 378.0,
+              "95.0": 378.0
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298140000",
+          "key": 1749298140000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 21631.0,
+              "95.0": 38110.399999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298200000",
+          "key": 1749298200000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 21661.0,
+              "95.0": 38277.95
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298260000",
+          "key": 1749298260000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 21661.0,
+              "95.0": 38277.95
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298320000",
+          "key": 1749298320000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 21661.0,
+              "95.0": 38277.95
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298380000",
+          "key": 1749298380000,
+          "doc_count": 8,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 28289.0,
+              "95.0": 36265.5
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 21661.0,
+              "95.0": 38277.95
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298440000",
+          "key": 1749298440000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 22385.5,
+              "95.0": 37372.649999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298500000",
+          "key": 1749298500000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 22385.5,
+              "95.0": 37372.649999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298560000",
+          "key": 1749298560000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 22385.5,
+              "95.0": 37372.649999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298620000",
+          "key": 1749298620000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 22385.5,
+              "95.0": 37372.649999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298680000",
+          "key": 1749298680000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 22385.5,
+              "95.0": 37372.649999999994
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298740000",
+          "key": 1749298740000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 28289.0,
+              "95.0": 36265.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298800000",
+          "key": 1749298800000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 28289.0,
+              "95.0": 36265.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298860000",
+          "key": 1749298860000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 28289.0,
+              "95.0": 36265.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298920000",
+          "key": 1749298920000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 28289.0,
+              "95.0": 36265.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749298980000",
+          "key": 1749298980000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 28289.0,
+              "95.0": 36265.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299040000",
+          "key": 1749299040000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299100000",
+          "key": 1749299100000,
+          "doc_count": 1,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 14023.0,
+              "95.0": 14023.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299160000",
+          "key": 1749299160000,
+          "doc_count": 2,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 27522.5,
+              "95.0": 29930.45
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 14023.0,
+              "95.0": 14023.0
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299220000",
+          "key": 1749299220000,
+          "doc_count": 2,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 19988.5,
+              "95.0": 31648.449999999997
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 24847.0,
+              "95.0": 29662.9
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299280000",
+          "key": 1749299280000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 24847.0,
+              "95.0": 32394.8
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299340000",
+          "key": 1749299340000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 24847.0,
+              "95.0": 32394.8
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299400000",
+          "key": 1749299400000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 24847.0,
+              "95.0": 32394.8
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299460000",
+          "key": 1749299460000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 24847.0,
+              "95.0": 32394.8
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299520000",
+          "key": 1749299520000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 24847.0,
+              "95.0": 32394.8
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299580000",
+          "key": 1749299580000,
+          "doc_count": 2,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 21409.0,
+              "95.0": 29078.8
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 24847.0,
+              "95.0": 32394.8
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299640000",
+          "key": 1749299640000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 24847.0,
+              "95.0": 32120.199999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299700000",
+          "key": 1749299700000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 24847.0,
+              "95.0": 32120.199999999997
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299760000",
+          "key": 1749299760000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 27389.0,
+              "95.0": 32257.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299820000",
+          "key": 1749299820000,
+          "doc_count": 64,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 20795.5,
+              "95.0": 40231.84999999998
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 21409.0,
+              "95.0": 32492.05
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299880000",
+          "key": 1749299880000,
+          "doc_count": 56,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 12386.0,
+              "95.0": 43011.5
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 20795.5,
+              "95.0": 39889.75
+            }
+          }
+        },
+        {
+          "key_as_string": "1749299940000",
+          "key": 1749299940000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17979.0,
+              "95.0": 42515.84999999999
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300000000",
+          "key": 1749300000000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17979.0,
+              "95.0": 42515.84999999999
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300060000",
+          "key": 1749300060000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17979.0,
+              "95.0": 42515.84999999999
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300120000",
+          "key": 1749300120000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17979.0,
+              "95.0": 42515.84999999999
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300180000",
+          "key": 1749300180000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17979.0,
+              "95.0": 42515.84999999999
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300240000",
+          "key": 1749300240000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17979.0,
+              "95.0": 42581.95
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300300000",
+          "key": 1749300300000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17979.0,
+              "95.0": 42581.95
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300360000",
+          "key": 1749300360000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17979.0,
+              "95.0": 42581.95
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300420000",
+          "key": 1749300420000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17979.0,
+              "95.0": 42581.95
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300480000",
+          "key": 1749300480000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 12386.0,
+              "95.0": 43011.5
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300540000",
+          "key": 1749300540000,
+          "doc_count": 33,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 17767.0,
+              "95.0": 46441.799999999996
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300600000",
+          "key": 1749300600000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17767.0,
+              "95.0": 46441.799999999996
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300660000",
+          "key": 1749300660000,
+          "doc_count": 10,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 19180.0,
+              "95.0": 29672.799999999996
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 17767.0,
+              "95.0": 46441.799999999996
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300720000",
+          "key": 1749300720000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18646.0,
+              "95.0": 45555.9
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300780000",
+          "key": 1749300780000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18646.0,
+              "95.0": 45555.9
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300840000",
+          "key": 1749300840000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18646.0,
+              "95.0": 45555.9
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300900000",
+          "key": 1749300900000,
+          "doc_count": 0,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": null,
+              "95.0": null
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18646.0,
+              "95.0": 45555.9
+            }
+          }
+        },
+        {
+          "key_as_string": "1749300960000",
+          "key": 1749300960000,
+          "doc_count": 1,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 19709.0,
+              "95.0": 19709.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 18646.0,
+              "95.0": 45555.9
+            }
+          }
+        },
+        {
+          "key_as_string": "1749301020000",
+          "key": 1749301020000,
+          "doc_count": 1,
+          "percentiles_of_bucket": {
+            "values": {
+              "50.0": 12300.0,
+              "95.0": 12300.0
+            }
+          },
+          "percentiles_of_bucket_of_10m_window": {
+            "values": {
+              "50.0": 19047.0,
+              "95.0": 45516.35
+            }
+          }
+        }
+      ]
+    }
+  }
+}
