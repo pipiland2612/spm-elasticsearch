@@ -13,7 +13,7 @@ Host: localhost:9200
 
 
 ### Calculate call rate for the last 1 hour (1m step interval, looking back 10m, for last 1 hour)
-GET /jaeger-main-jaeger-span-2025-05-30/_search
+GET /jaeger-main-jaeger-span-2025-06-06/_search
 Host: localhost:9200
 Content-Type: application/json
 
@@ -67,6 +67,70 @@ Content-Type: application/json
             },
             "buckets_path": "cumulative_requests",
             "window": 10}}}}}
+}
+
+
+### Calculate callrate for the last 1 hour (1m step interval, looking back 10m, for last 1 hour) groupedByOperation
+GET /jaeger-main-jaeger-span-2025-06-07/_search
+Host: localhost:9200
+Content-Type: application/json
+
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {"term": {"process.serviceName": "redis"}},
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {"term": {"tags.key": "span.kind"}},
+                  {"term": {"tags.value": "server"}}]}}}},
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": "now-10m",
+              "lte": "now",
+              "format": "epoch_millis"}}}]}
+  },
+  "aggs": {
+    "operations": {
+      "terms": {
+        "field": "operationName",
+        "size": 10
+      },
+      "aggs": {
+        "requests_per_bucket": {
+          "date_histogram": {
+            "field": "startTimeMillis",
+            "fixed_interval": "60s",
+            "min_doc_count": 0,
+            "extended_bounds": {
+              "min": "now-6h-10m",
+              "max": "now"
+            }
+          },
+          "aggs": {
+            "cumulative_requests": {
+              "cumulative_sum": {
+                "buckets_path": "_count"
+              }
+            },
+            "rate_per_second": {
+              "moving_fn": {
+                "script": {
+                  "source": "if (values == null || values.length < 2) {  return 0.0; } double windowSizeSeconds = values.length * params.interval_ms / 1000.0; double firstVal = values[0];\ndouble lastVal = values[values.length - 1]; return (lastVal - firstVal) / windowSizeSeconds;",
+                  "lang": "painless",
+                  "params": {
+                    "window": 10,
+                    "interval_ms": 60000
+                  }
+                },
+                "buckets_path": "cumulative_requests",
+                "window": 10}}}}}}}
 }
 
 
@@ -221,25 +285,82 @@ Content-Type: application/json
                   },
                   {
                     "term": {
-                      "tags.value": "server"
-                    }
-                  }
-                ]
-              }
-            }
-          }
+                      "tags.value": "server" }}]}}}
         },
         {
           "range": {
             "startTimeMillis": {
               "gte": "now-20m",
               "lte": "now",
-              "format": "epoch_millis"
-            }
+              "format": "epoch_millis" }}}]}
+  },
+  "aggs": {
+    "minute_buckets": {
+      "date_histogram": {
+        "field": "startTimeMillis",
+        "fixed_interval": "1m",
+        "min_doc_count": 0,
+        "extended_bounds": {
+          "min": "now-20m",
+          "max": "now"
+        }
+      },
+      "aggs": {
+        "percentiles_of_bucket": {
+          "percentiles": {
+            "field": "duration",
+            "percents": [
+              50, 95
+            ]
+          }
+        },
+        "percentiles_of_bucket_of_10m_window": {
+          "moving_percentiles": {
+            "buckets_path": "percentiles_of_bucket",
+            "window": 10
           }
         }
-      ]
+      }
     }
+  }
+}
+
+### Calculate percentile groupByOperation
+GET /jaeger-main-jaeger-span-2025-06-06/_search
+Host: localhost:9200
+Content-Type: application/json
+
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "term": {
+            "process.serviceName": "frontend"
+          }
+        },
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {
+                    "term": {
+                      "tags.key": "span.kind"
+                    }
+                  },
+                  {
+                    "term": {
+                      "tags.value": "server" }}]}}}
+        },
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": "now-20m",
+              "lte": "now",
+              "format": "epoch_millis" }}}]}
   },
   "aggs": {
     "minute_buckets": {
