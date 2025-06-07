@@ -4,4 +4,4 @@
 .venv/
 output.csv
 
-spm_plot_data/json/
+./spm_plot_data/json/

@@ -6,7 +6,7 @@ GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-27/_mapping
 Content-Type: application/json
 
 ### Get all spans
-GET http://localhost:9200/jaeger-main-jaeger-span-2025-05-30/_search
+GET http://localhost:9200/jaeger-main-jaeger-span-2025-06-07/_search
 Content-Type: application/json
 
 ### Get all services
