@@ -1,6 +1,9 @@
 import json
 import sys
+import math
 from statistics import mean
+from tabulate import tabulate
+
 
 def compute_mean_rates_callRate(pathToJsonFile):
     with open(pathToJsonFile, 'r') as f:
@@ -53,9 +56,57 @@ def extract_95th_percentile_means(path_to_file):
 
     return result
 
-mean_rates = compute_mean_rates_callRate("./json/mean_getCallRate.json")
-mean_percentiles = extract_95th_percentile_means("./json/mean_getLatencies.json")
-print("GetCallRate")
-print(json.dumps(mean_rates, indent=2))
-print("GetLatencies")
-print(json.dumps(mean_percentiles, indent=2))
+def extract_operation_means_fromSPM(path_to_file):
+    with open(path_to_file, "r", encoding="utf-8") as file:
+        data = json.load(file)
+
+    result = {}
+
+    for metric in data.get("metrics", []):
+        # Extract operation name from labels
+        labels = metric.get("labels", [])
+        operation = next((label["value"] for label in labels if label["name"] == "operation"), None)
+
+        if operation:
+            valid_sum = 0
+            nan_count = 0
+            total_count = 0
+
+            for point in metric.get("metricPoints", []):
+                value = point.get("gaugeValue", {}).get("doubleValue", None)
+                total_count += 1
+                if value is None or not isinstance(value, (int, float)) or math.isnan(value):
+                    nan_count += 1
+                else:
+                    valid_sum += value
+
+            mean_value = valid_sum / total_count if total_count > 0 else float("nan")
+            result[operation] = mean_value
+
+    return result
+
+
+def draw_comparison_table(dict1, dict2, header1, header2):
+    operations = sorted(set(dict1) & set(dict2))
+
+    table = []
+    for op in operations:
+        row = [
+            op,
+            round(dict1[op], 4),
+            round(dict2[op], 4),
+        ]
+        table.append(row)
+
+    headers = ["Operation", header1, header2]
+    print(tabulate(table, headers=headers, tablefmt="pretty"))
+
+mean_rates_es = compute_mean_rates_callRate("./json/mean_getCallRate.json")
+mean_percentiles_es = extract_95th_percentile_means("./json/mean_getLatencies.json")
+mean_rates_spm = extract_operation_means_fromSPM("./json/spm_getCallRate.json")
+mean_percentiles_spm = extract_operation_means_fromSPM("./json/spm_getLatencies.json")
+mean_error_spm = extract_operation_means_fromSPM("./json/spm_getErrorRate.json")
+
+print("\n")
+draw_comparison_table(mean_rates_es, mean_rates_spm, "ES_CallRate", "SPM_CallRate")
+draw_comparison_table(mean_percentiles_es, mean_percentiles_spm, "ES_Latencies", "SPM_Latencies")

@@ -35,7 +35,6 @@ def divide_common_keys(dict1: dict[int, float], dict2: dict[int, float]) -> dict
     return result
 
 
-
 # Example usage:
 arr1 = extract_call_rate_per_second_from_file("./json/es_getCallRate.json")
 arr2 = extract_call_rate_per_second_from_file("./json/es_getErrorRate.json")
