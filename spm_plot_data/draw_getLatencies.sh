@@ -18,7 +18,7 @@ curl --request GET \
   --header 'content-type: application/json' \
   --header 'host: localhost:9200' \
   --header 'user-agent: vscode-restclient' \
-  --data @- <<EOF | jq . > percentiles_spm_data.json
+  --data @- <<EOF | jq . > ./json/percentiles_spm_data.json
 {
   "size": 0,
   "query": {
@@ -78,4 +78,4 @@ curl --request GET \
 }
 EOF
 
-python3 plot-getLatencies-data.py
+python3 ./python/plot-getLatencies-data.py

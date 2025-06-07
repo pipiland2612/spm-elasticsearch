@@ -1,6 +1,6 @@
 #!/bin/bash
 
-service=${1:-redis}  # Default to 'redis' if no argument is provided
+service=${1:-customer}  # Default to 'redis' if no argument is provided
 current_timestamp=$(($(date +%s) * 1000))
 
 curl "http://localhost:16686/api/metrics/calls?service=${service}&endTs=${current_timestamp}&lookback=21600000&quantile=0.95&ratePer=600000&spanKind=server&step=60000" \
@@ -14,11 +14,11 @@ curl "http://localhost:16686/api/metrics/calls?service=${service}&endTs=${curren
 
 
 curl --request GET \
-  --url http://localhost:9200/jaeger-main-jaeger-span-2025-06-06/_search \
+  --url http://localhost:9200/jaeger-main-jaeger-span-2025-06-07/_search \
   --header 'content-type: application/json' \
   --header 'host: localhost:9200' \
   --header 'user-agent: vscode-restclient' \
-  --data @- <<EOF | jq . > es_data.json
+  --data @- <<EOF | jq . > ./json/es_data.json
 {
   "size": 0,
   "query": {
@@ -69,4 +69,4 @@ curl --request GET \
 }
 EOF
 
-python3 plot-getCallRate-data.py
+python3 ./python/plot-getCallRate-data.py

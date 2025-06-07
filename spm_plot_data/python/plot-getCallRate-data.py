@@ -81,8 +81,8 @@ def plot_two_maps(map1: dict, map2: dict, label1="SPM API", label2="ES query"):
     plt.show()
 
 # Example usage:
-arr1 = extract_gauge_values_from_file("spm_data.json")
+arr1 = extract_gauge_values_from_file("./json/spm_data.json")
 print(len(arr1))
-arr2 = extract_call_rate_per_second_from_file("./es_data.json")
+arr2 = extract_call_rate_per_second_from_file("./json/es_data.json")
 print(len(arr2))
 plot_two_maps(arr1, arr2)

@@ -85,6 +85,6 @@ def plot_two_maps(map1: dict, map2: dict, label1="SPM API", label2="ES query"):
     plt.show()
 
 # Example usage:
-arr1 = extract_gauge_values_from_file("spm_data.json")
-arr2 = extract_percentiles("./percentiles_spm_data.json", 0.95)
+arr1 = extract_gauge_values_from_file("./json/spm_data.json")
+arr2 = extract_percentiles("./json/percentiles_spm_data.json", 0.95)
 plot_two_maps(arr1, arr2)
