@@ -1,8 +1,31 @@
 import matplotlib.pyplot as plt
 from typing import List, Dict, Optional
 from datetime import datetime, timezone
+import numpy as np
 
-def plot_two_maps(map1: dict, map2: dict, label1="SPM API", label2="ES query", x_limits: Optional[tuple[int, int]] = None):
+
+def extract_gauge_values_from_file(filepath: str) -> dict[int, float]:
+    import json
+
+    with open(filepath, "r", encoding="utf-8") as file:
+        data = json.load(file)
+
+    result = {}
+    for metric in data.get("metrics", []):
+        for point in metric.get("metricPoints", []):
+            value = point.get("gaugeValue", {}).get("doubleValue")
+            timestamp = point.get("timestamp")
+            if value is not None and timestamp is not None:
+                key = timestamp_to_key(timestamp)
+                result[key] = value
+
+    return result
+
+def timestamp_to_key(timestamp_str: str) -> int:
+    dt = datetime.fromisoformat(timestamp_str.replace("Z", "+00:00"))
+    return int(dt.timestamp() * 1000)
+
+def plot_two_maps(map1: dict, map2: dict, maptitle: str, label1="SPM API", label2="ES query", x_limits: Optional[tuple[int, int]] = None):
     # Sort items by keys for both maps
     sorted_items1 = sorted(map1.items())
     sorted_items2 = sorted(map2.items())
@@ -20,7 +43,7 @@ def plot_two_maps(map1: dict, map2: dict, label1="SPM API", label2="ES query", x
 
     plt.xlabel('Time')
     plt.ylabel('Value')
-    plt.title('GetCallRate (req/s)')
+    plt.title(maptitle)
     plt.legend()
     plt.grid(True)
     plt.xticks(rotation=45)

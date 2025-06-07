@@ -34,10 +34,8 @@ def divide_common_keys(dict1: dict[int, float], dict2: dict[int, float]) -> dict
             result[key] = 0
     return result
 
-
 # Example usage:
 arr1 = extract_call_rate_per_second_from_file("./json/es_getCallRate.json")
 arr2 = extract_call_rate_per_second_from_file("./json/es_getErrorRate.json")
 arr3 = divide_common_keys(arr1, arr2)
-# helper.plot_two_maps(arr1, arr2)
-helper.plot_single_map(arr3, "Error Rate")
+helper.plot_single_map(arr3, "GetCallRate")

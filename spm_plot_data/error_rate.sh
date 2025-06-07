@@ -2,7 +2,17 @@
 
 #List of services that has error: [driver, redis, frontend]
 service=${1:-redis}  # Default to 'redis' if no argument is provided
-#current_timestamp=$(($(date +%s) * 1000))
+current_timestamp=$(($(date +%s) * 1000))
+
+curl "http://localhost:16686/api/metrics/errors?service=${service}&endTs=${current_timestamp}&lookback=21600000&quantile=0.95&ratePer=600000&spanKind=server&step=60000" \
+  -H 'Referer: http://localhost:16686/monitor' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' | jq . > ./json/spm_getErrorRate.json
 
 curl --request GET \
   --url http://localhost:9200/jaeger-main-jaeger-span-2025-06-07/_search \

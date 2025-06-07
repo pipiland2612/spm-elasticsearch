@@ -7,12 +7,6 @@ from datetime import datetime, timezone
 # spm_data.json --> data from Jaeger SPM API endpoint
 # es_data.json --> data from ES query
 
-
-
-def timestamp_to_key(timestamp_str: str) -> int:
-    dt = datetime.fromisoformat(timestamp_str.replace("Z", "+00:00"))
-    return int(dt.timestamp() * 1000)
-
 def extract_gauge_values_from_file(filepath: str) -> dict[int, float]:
     import json
 
@@ -30,13 +24,11 @@ def extract_gauge_values_from_file(filepath: str) -> dict[int, float]:
                 try:
                     num = float(value)
                     if not math.isnan(num):
-                        key = timestamp_to_key(timestamp)
+                        key = helper.timestamp_to_key(timestamp)
                         result[key] = round(num)
                 except ValueError:
                     pass
     return result
-
-
 
 def extract_percentiles(json_path, percentile):
     import json
@@ -61,4 +53,4 @@ def extract_percentiles(json_path, percentile):
 # Example usage:
 arr1 = extract_gauge_values_from_file("./json/spm_getLatencies.json")
 arr2 = extract_percentiles("./json/es_getLatencies.json", 0.95)
-helper.plot_two_maps(arr1, arr2)
+helper.plot_two_maps(arr1, arr2, "GetLatencies")
