@@ -3,6 +3,7 @@
 #List of services that has error: [driver, redis, frontend]
 service=${1:-redis}  # Default to 'redis' if no argument is provided
 current_timestamp=$(($(date +%s) * 1000))
+source3="\"if (values == null || values.length < 2) return 0.0; double n = values.length; double sumX = 0.0; double sumY = 0.0; double sumXY = 0.0; double sumX2 = 0.0; for (int i = 0; i < n; i++) { double x = i; double y = values[i]; sumX += x; sumY += y; sumXY += x * y; sumX2 += x * x; } double numerator = n * sumXY - sumX * sumY; double denominator = n * sumX2 - sumX * sumX; if (Math.abs(denominator) < 1e-10) return 0.0; double slopePerBucket = numerator / denominator; double intervalSeconds = params.interval_ms / 1000.0; return slopePerBucket / intervalSeconds;\""
 
 curl "http://localhost:16686/api/metrics/errors?service=${service}&endTs=${current_timestamp}&lookback=21600000&quantile=0.95&ratePer=600000&spanKind=server&step=60000" \
   -H 'Referer: http://localhost:16686/monitor' \
@@ -15,7 +16,7 @@ curl "http://localhost:16686/api/metrics/errors?service=${service}&endTs=${curre
   -H 'sec-ch-ua-platform: "macOS"' | jq . > ./json/spm_getErrorRate.json
 
 curl --request GET \
-  --url http://localhost:9200/jaeger-main-jaeger-span-2025-06-07/_search \
+  --url http://localhost:9200/jaeger-main-jaeger-span-*/_search \
   --header 'content-type: application/json' \
   --header 'host: localhost:9200' \
   --header 'user-agent: vscode-restclient' \
@@ -58,7 +59,7 @@ curl --request GET \
         "rate_per_second": {
           "moving_fn": {
             "script": {
-              "source": "if (values == null || values.length < params.window) {  return 0.0; } double windowSizeSeconds = params.window * params.interval_ms / 1000.0; double firstVal = values[0]; double lastVal = values[values.length - 1]; return (lastVal - firstVal) / windowSizeSeconds;",
+              "source": ${source3},
               "lang": "painless",
               "params": {
                 "window": 10,
@@ -72,7 +73,7 @@ EOF
 
 
 curl --request GET \
-  --url http://localhost:9200/jaeger-main-jaeger-span-2025-06-07/_search \
+  --url http://localhost:9200/jaeger-main-jaeger-span-*/_search \
   --header 'content-type: application/json' \
   --header 'host: localhost:9200' \
   --header 'user-agent: vscode-restclient' \
@@ -129,7 +130,7 @@ curl --request GET \
         "rate_per_second": {
           "moving_fn": {
             "script": {
-              "source": "if (values == null || values.length < 2) {  return 0.0; } double windowSizeSeconds = values.length * params.interval_ms / 1000.0; double firstVal = values[0];\ndouble lastVal = values[values.length - 1]; return (lastVal - firstVal) / windowSizeSeconds;",
+              "source": ${source3},
               "lang": "painless",
               "params": {
                 "window": 10,

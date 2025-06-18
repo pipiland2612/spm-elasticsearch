@@ -14,7 +14,7 @@ curl "http://localhost:16686/api/metrics/latencies?service=${service}&endTs=${cu
 
 
 curl --request GET \
-  --url http://localhost:9200/jaeger-main-jaeger-span-2025-06-07/_search \
+  --url http://localhost:9200/jaeger-span-*/_search \
   --header 'content-type: application/json' \
   --header 'host: localhost:9200' \
   --header 'user-agent: vscode-restclient' \
@@ -58,7 +58,7 @@ curl --request GET \
         "fixed_interval": "1m",
         "min_doc_count": 0,
         "extended_bounds": {
-          "min": "now-20m",
+          "min": "now-6h",
           "max": "now"
         }
       },
@@ -75,6 +75,88 @@ curl --request GET \
           "moving_percentiles": {
             "buckets_path": "percentiles_of_bucket",
             "window": 10 }}}}}
+}
+EOF
+
+curl --request GET \
+  --url http://localhost:9200/jaeger-span-*/_search \
+  --header 'content-type: application/json' \
+  --header 'host: localhost:9200' \
+  --header 'user-agent: vscode-restclient' \
+  --data @- <<EOF | jq . > ./json/es_getLatencies2.json
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "term": { "process.serviceName": "${service}" }
+        },
+        {
+          "nested": {
+            "path": "tags",
+            "query": {
+              "bool": {
+                "must": [
+                  {
+                    "term": {
+                      "tags.key": "span.kind"
+                    }
+                  },
+                  {
+                    "term": {
+                      "tags.value": "server"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "range": {
+            "startTimeMillis": {
+              "format": "epoch_millis",
+              "from": "now-6h",
+              "include_lower": true,
+              "include_upper": true,
+              "to": "now"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "requests_per_bucket": {
+      "date_histogram": {
+        "extended_bounds": {
+          "max": "now",
+          "min": "now-6h"
+        },
+        "field": "startTimeMillis",
+        "fixed_interval": "60000ms",
+        "min_doc_count": 0
+      },
+      "aggs": {
+        "percentiles_of_bucket": {
+          "percentiles": {
+            "field": "duration",
+            "percents": [
+              95
+            ]
+          }
+        },
+        "results": {
+          "moving_fn": {
+            "buckets_path": "percentiles_of_bucket[95.0]",
+            "script": "List f=new ArrayList();double s=0;for(v in values)if(v!=null&&!Double.isNaN(v)){f.add(v);s+=v;}return f.isEmpty()?Double.NaN:(f.get((int)Math.min(Math.ceil(0.95*(f.size()-1)),f.size()-1))*0.7+(s/f.size())*0.3)",
+            "window": 10
+          }
+        }
+      }
+    }
+  }
 }
 EOF
 

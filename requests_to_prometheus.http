@@ -1,3 +1,5 @@
 ### Scrape prometheus metrics from a local server on port 8889
 GET http://localhost:8889/metrics
 Host: localhost:8889
+
+sum(rate(traces_span_metrics_calls_total{service_name =~ "driver", span_kind =~ "SPAN_KIND_SERVER"}[10m])) by (service_name)

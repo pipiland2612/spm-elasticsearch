@@ -50,7 +50,26 @@ def extract_percentiles(json_path, percentile):
 
     return result
 
+def extract_percentiles2(json_path):
+    import json
+    with open(json_path, 'r') as file:
+        data = json.load(file)
+
+    result = {}
+    buckets = data.get("aggregations", {}).get("requests_per_bucket", {}).get("buckets", [])
+
+    for bucket in buckets:
+        key = bucket.get("key")
+        value_ms = bucket.get("results", {}).get("value")
+
+        if value_ms is not None:
+            result[key] = value_ms / 1000
+
+    return result
+
+
 # Example usage:
 arr1 = extract_gauge_values_from_file("./json/spm_getLatencies.json")
 arr2 = extract_percentiles("./json/es_getLatencies.json", 0.95)
+arr3 = extract_percentiles2("./json/es_getLatencies2.json")
 helper.plot_two_maps(arr1, arr2, "GetLatencies")

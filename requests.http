@@ -177,7 +177,7 @@ Content-Type: application/json
 }
 
 ### Test Records Count
-GET http://localhost:9200/jaeger-main-jaeger-span-2025-06-07/_search
+GET http://localhost:9200/jaeger-span-*/_search
 Content-Type: application/json
 
 {
@@ -186,7 +186,7 @@ Content-Type: application/json
   "query": {
     "bool": {
       "filter": [
-        {"term": {"process.serviceName": "redis"}},
+        {"term": {"process.serviceName": "driver"}},
         {
           "nested": {
             "path": "tags",
